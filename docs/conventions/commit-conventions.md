@@ -32,7 +32,7 @@ feat(frontend/menubar): remove legacy implementation
 |Type|Description|
 |-|-|
 |feat|new feature|
-|refactor|code change that neither fixes a bug or adds a feature|
+|refactor|code change that neither fixes a bug nor adds a feature|
 |test|add or update test(s)|
 |fix|a bug fix|
 |docs|updating documentation|

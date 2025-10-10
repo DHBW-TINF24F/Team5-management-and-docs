@@ -10,11 +10,11 @@ Mind that different conventions apply to documentation and source code repositor
 
 ## Definitions
 
-|Word|Defintion|
+|Word|Definition|
 |-|-|
 |Type|The type is the category of an issue, pull request or commit.|
 |Scope|The scope is the part of the project that is affected.|
 
-If not other defined, these definitions apply.
+If not otherwise defined, these definitions apply.
 
 {: .no_toc }
