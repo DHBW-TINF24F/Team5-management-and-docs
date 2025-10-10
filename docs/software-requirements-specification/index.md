@@ -10,7 +10,7 @@ nav_order: 1
 This Software Requirements Specifiction (SRS) specifies the work of group 5.
 The software and this secification was developed in connection with a university project.
 
-**Authors:** Julian Schumacher, Bruno Lange, Nils Schäffner, Felix Hennerichen, Robin, Jan und Gregor Gottschewski.
+**Authors:** Julian Schumacher, Bruno Lange, Nils Schäffner, Felix Hennerichen, Robin Kelm, Jan Kruske und Gregor Gottschewski.
 
 **Date of last revision:** 26.09.2025
 
