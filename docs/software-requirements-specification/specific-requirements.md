@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Specific requirements
 parent: Software Requirements Specification
 ---
