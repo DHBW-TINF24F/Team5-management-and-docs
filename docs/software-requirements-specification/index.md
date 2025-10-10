@@ -1,6 +1,7 @@
 ---
+layout: default
 title: Software Requirements Specification
-nav_order: 1
+nav_order: 3
 ---
 
 # Software Requirements Specification
@@ -12,6 +13,4 @@ The software and this secification was developed in connection with a university
 
 **Authors:** Julian Schumacher, Bruno Lange, Nils Schäffner, Felix Hennerichen, Robin Kelm, Jan Kruske und Gregor Gottschewski.
 
-**Date of last revision:** 26.09.2025
-
-> Read the [IEEE Guide to Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=278253) or [IEEE Recommended Practice for Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=720574) before contributong to the SRS.
+**Date of last revision:** 10.10.2025
