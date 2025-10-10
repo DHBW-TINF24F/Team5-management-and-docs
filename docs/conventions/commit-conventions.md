@@ -4,9 +4,9 @@ title: Commit conventions
 parent: Conventions
 ---
 
-# Commit Conventions
+# Commit conventions
 
-All commits have to start with a preamble, followed by a short description and an optional reference to an issue or similar.
+Commits start with a preamble, followed by a short description and an optional reference to an issue or similar.
 The syntax of a commit has to match:
 
 ```
