@@ -119,6 +119,20 @@ gantt
     Final Presentation              :e4, 2026-05-20, 2026-05-22
     Project Handover                :e5, 2026-05-22, 2026-05-22
 ```
+### Risk Matrix
+To grant a smooth and secure development we need to assess possible risks:
+
+| Probability ↓ / Impact → | 1 (Low) | 2 | 3 | 4 | 5 (High) |
+|---------------------------|:-------:|:--:|:--:|:--:|:---------:|
+| 1 (Very Low)             | Customer Changes 🔹<br>Unrealistic Customer Requests 🔹 | Declining Motivation 🔹 | Communication Problems 🔹 | - | - |
+| 2 (Low)                  | Permanent Staff Loss 🔹 | Too Many Features 🔸 | Documentation Failures 🔸<br>Complicated Testability 🔸 | Temporary Staff Absence 🔸<br>Difficult Re-Entry 🔸 | - |
+| 3 (Medium)               | Hardware Failure 🔹 | Conflicts w/ Existing Software 🔸 | Lack of Testing 🔺 | Handover Errors to Mnestix 🔺 | - |
+| 4 (High)                 | - | Time Shortage 🔸 | - | - | Overload / Task Overcommitment 🔺 |
+| 5 (Very High)            | - | - | - | - | - |
+
+**Legend:**  
+🔹 = Low Risk 🔸 = Medium Risk 🔺 = High Risk
+
 
 
 
