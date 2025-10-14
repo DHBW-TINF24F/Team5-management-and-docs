@@ -167,6 +167,34 @@ To grant a smooth and secure development we need to assess possible risks:
 | Presentation         | 10             | 10              | 5         | 5             | 15        | 10         | 5                |
 | **Total**            | 180            | 180             | 180        | 180            | 180       | 180        | 180               |
 
+| Expense                 | Amount (€)      |
+|-------------------------|----------------|
+| Electricity             | 350.65         |
+| Internet                | 325.75         |
+| JetBrains Thunderstorm  | 19.90 × 9 = 179.10 |
+| Test Server             | 205.56         |
+| **Total**               | 1,061.06       |
+
+```mermaid
+   pie title Project Costs Breakdown
+    "Documentation": 12686
+    "Customer Dialogue": 3254
+    "Meetings": 12686
+    "Analysis": 7592
+    "Design": 7168
+    "Coding": 12787
+    "Testing": 6046
+    "GitHub Organization": 4720
+    "Project Management": 5489
+    "Presentation": 3485
+    "Electricity": 351
+    "Internet": 326
+    "Test Server": 206
+    "JetBrains Thunderstorm": 179
+
+
+
+
 
 
 
