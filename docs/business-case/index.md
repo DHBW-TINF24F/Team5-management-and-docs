@@ -88,6 +88,37 @@ gantt
     section Presentation
     Presentation                 :d1, 2025-10-17, 2025-11-07
 ```
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Project Phase 2 Overview
+    excludes    weekends
+
+    section Docs
+    Meeting Minutes                 :a1, 2026-03-09, 2026-05-22
+    STP (System Test Plan)          :a2, 2026-03-09, 2026-04-05
+    STR (System Test Report)        :a3, 2026-04-16, 2026-05-14
+    User Documentation              :a4, 2026-04-15, 2026-05-15
+    Developer Documentation         :a5, 2026-04-18, 2026-05-17
+
+    section Implementation
+    Finish 3rd Semester Tasks       :c1, 2026-03-09, 2026-05-20
+    Implement Product-View Features :c2, 2026-04-06, 2026-05-10
+    Rework Submodel Usability       :c3, 2026-04-03, 2026-05-06
+    Implement Performance Upgrades  :c4, 2026-04-02, 2026-05-13
+    
+
+    section Testing
+    Develop Test Strategy           :d1, 2026-03-16, 2026-03-31
+    Test Application                :d2, 2026-04-27, 2026-05-13
+    Fix Errors                      :d3, 2026-05-04, 2026-05-20
+
+    section Presentation & Handover
+    Design Presentation             :e1, 2026-04-15, 2026-05-15     
+    Present to Mnestix Team         :e2, 2026-05-15, 2026-05-21
+    Final Presentation              :e4, 2026-05-20, 2026-05-22
+    Project Handover                :e5, 2026-05-22, 2026-05-22
+```
 
 
 
