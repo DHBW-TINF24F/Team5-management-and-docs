@@ -137,6 +137,19 @@ To grant a smooth and secure development we need to assess possible risks:
 🔹 = Low Risk 🔸 = Medium Risk 🔺 = High Risk
 
 
+### Project Team Costs 
+
+| Name                     | Role                | Hourly Rate (€) | Hours | Cost (€) |
+|--------------------------|-------------------|----------------|-------|-----------|
+| Felix Hennerich          | Project Manager     | 71.50          | 180   | 12,870    |
+| Julian Schumacher        | Product Manager     | 64.75          | 180   | 11,655    |
+| Bruno Lange              | System Architect    | 78.20          | 180   | 14,076    |
+| Nils Schäffner           | Test Manager        | 59.80          | 180   | 10,764    |
+| Jan Kruske               | Developer           | 44.60          | 180   | 8,028     |
+| Robin Kelm               | Technical Writer    | 48.90          | 180   | 8,802     |
+| Gregor Gottschewski      | Technical Writer    | 55.10          | 180   | 9,918     |
+| **Total**                |                     |                |       | **75,113** |
+
 
 
 
