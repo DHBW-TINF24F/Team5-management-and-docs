@@ -3,4 +3,4 @@
 This directory contains project management files.
 Available files:
 
-* [Software Requeirements Specification (Gregor Gottschewski)](/PROJECT/software-requirements-specification.md)
+* [Software Requirements Specification (Gregor Gottschewski)](/PROJECT/software-requirements-specification.md)

@@ -1,13 +1,13 @@
 # Software Requirements Specification
 
-This Software Requirements Specifiction (SRS) specifies the work of group 5.
+This Software Requirements Specification (SRS) specifies the work of group 5.
 The software and this secification was developed in connection with a university project.
 
 **Author:** Gregor Gottschewski
 
 **Date of last revision:** 26.09.2025
 
-> Read the [IEEE Guide to Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=278253) or [IEEE Recommended Practice for Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=720574) before contributong to the SRS.
+> Read the [IEEE Guide to Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=278253) or [IEEE Recommended Practice for Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=720574) before contributing to the SRS.
 
 ## Introduction
 
@@ -26,12 +26,17 @@ Required for reading this specification is knowledge about the Mnestix Browser a
 **_The developer team_** includes all developers and organizations listed [here](index#software-requirements-specification).  
 **_Extensions_** are further developments of the already existing code base of the Mnestix Browser if not stated further.  
 **_The customer_** is the supervising lecturer.  
-**_UI_** is an acronym for user interface.
+**_UI_** is an acronym for user interface.  
 **_Mnestix_** is a short form of Mnestix Browser.  
 **_Power users_** are software users that spend a long time using the software.  
-**_Regular users_** are software users that use the software sometimes.
-**_Fast loading time_** refers to software loading times in a approrpiate time (less than 2 seconds) on a small repository (less than thousand entries) with a local installation of Mnestix on modern hardware.
+**_Regular users_** are software users that use the software sometimes.  
 **_Guest_** is a user that is not registered at the Mnestix Browser instance.
+
+This specification uses terms 'modern hardware' and 'stable connection to the backend' often.
+The software was tested on a MacBook Pro 2024 (M4 Pro, 48 GB, macOS 15.7.1) with a local Mnestix Browser build.
+All loading times etc. refer to this machine and environment.
+Please note that the repository size influences the loading time.
+This software was tested with a 100 item repository.
 
 ### Scope
 
@@ -96,37 +101,20 @@ J <-->|Internal Interfaces| E
 
 #### User interfaces
 
-Bisasam enhances catalog management, repository configuration, and product visualization.
+Bisasam enhances catalog management, repository configuration, and product visualization.  
 All new UI elements are integrated into the existing Mnestix UI.
 
-##### General
+Users interact with project Bisasam's extension on all views.
+Some extensions affect the repository configuration view and the catalog selection view.
+The product view, responsible for listing all products, and the product detail view are part of project Bisasam's extensions.
+These changes do not affect Mnestix' UI principles.
 
-- **Login status:** Visible in the upper bar to inform users about their login state.
-
-##### Repository configuration view
-
-- **Configuration dialog:** Users can enable or disable individual AAS repositories and configure CD repositories.
-- **Content display:** Allow inspection of CD repository contents.
-
-##### Catalog selection view
-
-- **Repository count:** Display the number of available products per repository.
-
-##### Product list view
-
-- **Filter and sort options:** Product lists can be filtered and sorted via query parameters.
-- **Visible columns:** `ManufacturerName`, `ProductDesignation`, `OrderCode`, `ManufacturerCode`, `GlobalAssetId`, `CreatedAt`.
-- **Sorting:** Entries in the product list can be sorted by column.
-
-##### Product detail view
-
-- **Nameplate generator integration (NGI):** NGI accessible from the product context menu.
-- **Submodel visualization:** Linked AAS references are navigable and SM TechnicalData and HandoverDocumentation have improved formatting.
-- **Shop functions:** Adds `addToCart` and `showCart` actions with small chart overview.
+These changes follow Mnestix’s existing design principles.
+All affected elements are configurable and/or selectable by the user.
 
 #### Operations
 
-Project Bisasam does not change administration bahaviour.
+Project Bisasam does not change administration behaviour.
 Some new features add additional log messages to provide information.
 These log messages are not specified and will only be added if necessarily need for development or administration.
 
@@ -137,14 +125,14 @@ The following content adds additional, non UI-features, and refers to user inter
 
 To increase Mnestix Browser's performance, the code base of the product list should be improved.
 Thumbnails should only load on the user's visible screen.
-Additionaly to performance improvements, the user experience should be increased.
-These new features cover filtering, sorting and detailed product imformation
+Additionally to performance improvements, the user experience should be increased.
+These new features cover filtering, sorting and detailed product information.
 Some features do not enhance existing features but add new features.
 Part of this are eShop interactions and integration of an external nameplate generator.
 
 ### User characteristics
 
-Mnestix Browser and the correspodingly project Bisasam user group is diverse.
+Mnestix Browser and the corresponding project Bisasam user group is diverse.
 
 ```mermaid
 mindmap
@@ -189,13 +177,13 @@ The cart and shop feature is the most critical part of project Bisasam.
 It has to be acessable for every user group and should bring all relevant information about the selected products.
 
 > See [limitations](#limitations) for more information about the shop.
-> Project Bisasam assumes that guests are call uponed to register before buying a product.
+> Project Bisasam assumes that guests are called upon to register before buying a product.
 
 Project Bisasam does not change Mnestix' user management nor user rules/rights.
 
 ### Limitations
 
-Project Bisasam convers a shop function with a chart.
+Project Bisasam covers a shop function with a chart.
 It does not implement money transaction or other interfaces to buy a product.
 
 ### Assumptions and dependencies
@@ -225,6 +213,24 @@ It does not implement money transaction or other interfaces to buy a product.
 #### Portability
 
 ### Functional requirements
+
+Project Bisasam should add following features to Mnestix Browser.
+
+* **Login status:** A symbol in the upper right corner in the menubar should inform the user about their login state.
+* **Configuration dialog:** Users should enable or disable individual AAS repositories and configure CD repositories.
+* **Content display:** Users should be able to allow inspection of CD repository contents.
+* **Repository count:** The number of available products per repository should be visible in the respository view.
+* **Filter and sort options:** The product lists should be filterable and sorted via query parameters.
+* **Visible columns:** The columns `ManufacturerName`, `ProductDesignation`, `OrderCode`, `ManufacturerCode`, `GlobalAssetId`, `CreatedAt` should be visible in the product list.
+* **Sorting:** Entries in the product list should be sortable by column.
+* **Nameplate generator integration (NGI):** The NGI should be accessible from the product context menu.
+* **Submodel visualization:** Linked AAS references should are navigable and SM TechnicalData and HandoverDocumentation should have improved formatting.
+* **Shop functions:** `addToCart` and `showCart` should be added with a small cart overview.
+
+### Usability requirements
+
+The product list should load images in less than two seconds on modern hardware and a stable connection to the backend.
+See [Definitions and Acronyms](#definitions-and-acronyms) for more information.
 
 #### Functional partitioning
 
