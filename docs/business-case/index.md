@@ -9,6 +9,8 @@ nav_order: 1
 | 1.0 | 09.10.2025 | Nils Schäffner | Initialize BC and document structure          |
 | 1.1  | 10.10.2025 | Nils Schäffner | Formulate Introduction, Scope and Benefits |
 | 1.2 | 12.10.2025 | Nils Schäffner | Initialzie BC as Markdown in GitHub Docs |
+| 1.3 | 14.10.2025 | Nils Schäffner | Add Gantt diagram and cost calculation |
+
 
 # TABLE OF CONTENTS
 Intro
@@ -53,8 +55,39 @@ The project strengthens the open-source Mnestix ecosystem and the team’s exper
 | Improved Data Quality – More consistent repository handling reduces input errors by around 15–20%. |
 | Future Scalability – A unified architecture supports cost-effective integration of future modules and services. |
 
-## Business Impact
+#### Business Impact
 Overall, the development increases productivity, reduces operational costs, and strengthens Mnestix’s position as a modern, user-friendly platform for AAS-based product catalogue management.
+
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title       Project Phase 1 Overview
+    excludes    weekends
+
+    section Docs
+    BC                          :a1, 2025-09-26, 2025-11-01
+    SAS                         :a2, 2025-09-26, 2025-11-01
+    CRS                         :a3, 2025-09-26, 2025-11-03
+    SRS                         :a4, 2025-09-26, 2025-11-04
+    PM                          :a5, 2025-09-26, 2025-11-07
+    Meeting Protocols            :a6, 2025-09-26, 2025-11-07
+
+    section Analysis
+    Test Mnestix and AAS         :b1, 2025-09-26, 2025-10-08
+    Formulate Documentation Issues :b2, 2025-09-26, 2025-10-10
+    Formulate Implementation Issues :b3, 2025-09-26, 2025-10-17
+    Assign Implementation Issues :b4, 2025-10-10, 2025-10-24
+
+    section Implementation
+    Initialize GitHub Repository :c1, 2025-09-26, 2025-10-06
+    Implement UI Features        :c2, 2025-10-18, 2025-11-14
+    Implement Sorting Features   :c3, 2025-10-20, 2025-11-14
+    Implement Filter Options     :c4, 2025-10-22, 2025-11-14
+    Add eShop Features           :c5, 2025-10-24, 2025-11-14
+
+    section Presentation
+    Presentation                 :d1, 2025-10-17, 2025-11-07
+```
 
 
 
