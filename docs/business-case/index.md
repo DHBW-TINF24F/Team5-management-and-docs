@@ -151,5 +151,22 @@ To grant a smooth and secure development we need to assess possible risks:
 | **Total**                |                     |                |       | **75,113** |
 
 
+### Workload Distribution (hours per task, 180h per person)
+
+| Task                 | Felix Hennerich | Julian Schumacher | Bruno Lange | Nils Schäffner | Jan Kruske | Robin Kelm | Gregor Gottschewski |
+|----------------------|----------------|-----------------|------------|----------------|-----------|------------|-------------------|
+| Documentation        | 30             | 30              | 30         | 30             | 30        | 30         | 30                |
+| Customer Dialogue    | 15              | 15               | 5          | 5              | 0        | 5          | 5                 |
+| Meetings             | 30             | 30              | 30         | 30             | 30        | 30         | 30                |
+| Analysis             | 5             | 25              | 30         | 5             | 20        | 20         | 20                |
+| Design               | 0              | 15              | 50         | 20             | 0         | 10          | 20                 |
+| Coding               | 10             | 40              | 20         | 20             | 65        | 50          | 25                 |
+| Testing              | 5             | 0               | 5         | 60              | 15        | 10          | 10                 |
+| GitHub Organization  | 15              | 5               | 5          | 5             | 5         | 15         | 25                 |
+| Project Management   | 60              | 10               | 0          | 0              | 0         | 0          | 10                |
+| Presentation         | 10             | 10              | 5         | 5             | 15        | 10         | 5                |
+| **Total**            | 180            | 180             | 180        | 180            | 180       | 180        | 180               |
+
+
 
 
