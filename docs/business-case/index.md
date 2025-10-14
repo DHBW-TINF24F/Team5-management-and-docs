@@ -3,13 +3,16 @@ title: Business Case
 nav_order: 1
 ---
 
+> [!CAUTION]
+> This docuemnt is only for company use!<br> Do not share with anybody, especially customers!<br>
+> Only grant insight to supervisors for grading!
 # LOOK AT WORD VERSION AGAIN
 | Version | Date       | Author         | Comment                                      |
 |:--------:|:-----------:|:---------------:|:---------------------------------------------|
 | 1.0 | 09.10.2025 | Nils Schäffner | Initialize BC and document structure          |
 | 1.1  | 10.10.2025 | Nils Schäffner | Formulate Introduction, Scope and Benefits |
 | 1.2 | 12.10.2025 | Nils Schäffner | Initialzie BC as Markdown in GitHub Docs |
-| 1.3 | 14.10.2025 | Nils Schäffner | Add Gantt diagram and cost calculation |
+| 1.3 | 14.10.2025 | Nils Schäffner | Add Gantt diagram and risk analysis |
 
 
 # TABLE OF CONTENTS
