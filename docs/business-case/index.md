@@ -1,38 +1,48 @@
----
-title: Business Case
-nav_order: 1
----
-
 > [!CAUTION]
-> This docuemnt is only for company use!<br> Do not share with anybody, especially customers!<br>
+> This document is only for company use!<br> Do not share with anybody, especially customers!<br>
 > Only grant insight to supervisors for grading!
 # LOOK AT WORD VERSION AGAIN
+
+<h1 align="center">Business Case</h1>
+<h3 align="center"> by Nils Schäffner</h1>
+
+
 | Version | Date       | Author         | Comment                                      |
 |:--------:|:-----------:|:---------------:|:---------------------------------------------|
 | 1.0 | 09.10.2025 | Nils Schäffner | Initialize BC and document structure          |
 | 1.1  | 10.10.2025 | Nils Schäffner | Formulate Introduction, Scope and Benefits |
-| 1.2 | 12.10.2025 | Nils Schäffner | Initialzie BC as Markdown in GitHub Docs |
+| 1.2 | 12.10.2025 | Nils Schäffner | Initialize BC as Markdown in GitHub Docs |
 | 1.3 | 14.10.2025 | Nils Schäffner | Add Gantt diagram and risk analysis |
+| 1.4 | 15.10.2025 | Nils Schäffner | Add cost and price calculation |
 
 
 # TABLE OF CONTENTS
-Intro
-Was ist zu verbessern, implementieren
-Warum ist das gut
-GANTT
-RISIKOMATRIX
-Kostenrechnungen
-Angebot
+- [Introduction](#introduction)
+- [Scope](#scope)
+- [Qualitative and Quantitative Benefits of Development](#qualitative-and-quantitative-benefits-of-development)
+- [Time Plan](#time-plan)
+  - [Gantt Diagram 1st Phase](#gantt-1st-phase)
+  - [Gantt Diagram 2nd Phase](#gantt-2nd-phase)
+- [Risk Analysis](#risk-analysis)
+  - [Risk Matrix](#risk-matrix)
+- [Financial Aspects](#financial-aspects)
+  - [Project Team Costs](#project-team-costs)
+  - [Workload Distribution (hours per task, 180h per person)](#workload-distribution-hours-per-task-180h-per-person)
+  - [Other Costs](#other-costs)
+  - [Overview](#overview)
+  - [Offer](#offer)
 
 # Introduction
+
 This document outlines the business case for the upcoming software project. The project team has successfully collaborated on multiple projects in the past, continuously developing strong web engineering expertise to deliver high-quality digital products.
 In the following sections, the customer’s order will be presented in detail, with a particular focus on the value and benefits our solution will provide to the client. Furthermore, this document serves as the formal business proposal submitted to the customer. It includes a comprehensive time and risk analysis, followed by a detailed cost estimation required to successfully complete the project.
 
 # Scope
+
 Mnestix Product Catalogue is a web-based open-source software designed to simplify the implementation of the Asset Administration Shell (AAS). Its main purpose is to support the creation and management of digital product catalogues, offering various features for browsing and organizing catalogue data.
 However, several important usability and functionality aspects are still missing from a user perspective. The planned improvements will mainly focus on enhancing the application’s usability and integrating additional services such as the Nameplate Generator. Furthermore, eShop functionalities (e.g., Add to Cart, Show Cart) will be introduced, and the presentation of documentation and technical data will be refined.
 The project also aims to improve product search, filtering, and data visualization while ensuring smoother interaction with repositories. In addition, the team will analyze existing features, evaluate the current usability concept, and implement targeted improvements to increase overall efficiency and user satisfaction.
-#For detailed requirements see CRS
+For detailed requirements see CRS.
 
 
 # Qualitative and quantitative benefits of development
@@ -60,6 +70,15 @@ The project strengthens the open-source Mnestix ecosystem and the team’s exper
 
 #### Business Impact
 Overall, the development increases productivity, reduces operational costs, and strengthens Mnestix’s position as a modern, user-friendly platform for AAS-based product catalogue management.
+
+# Time plan
+
+The projects starts at 19th September 2025 and will end in May 2026. The project is divided in to parts.
+The first phase starts at 19th September 2025 and ends with the 30th November 2025. The second phase starts at 9th March 2026 and ends in May 2026.
+To use the teams time effectifely a structured plan is needed.
+This plan is provided in the two following gantt diagrams, which display every task in detail:
+
+### Gantt 1st phase
 
 ```mermaid
 gantt
@@ -91,6 +110,8 @@ gantt
     section Presentation
     Presentation                 :d1, 2025-10-17, 2025-11-07
 ```
+### Gantt 2nd phase
+
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
@@ -122,13 +143,18 @@ gantt
     Final Presentation              :e4, 2026-05-20, 2026-05-22
     Project Handover                :e5, 2026-05-22, 2026-05-22
 ```
-### Risk Matrix
-To grant a smooth and secure development we need to assess possible risks:
+# Risk Analysis
+
+To grant a smooth and secure development we need to assess possible risks in order to develop counter measures
+
+## Risk Matrix
+To quantify the risks in the project, one can use a risk matrix. Every risk is evaluated with probability and impact.
+This creates a handy overview to see the most dangerous risks on first sight:
 
 | Probability ↓ / Impact → | 1 (Low) | 2 | 3 | 4 | 5 (High) |
 |---------------------------|:-------:|:--:|:--:|:--:|:---------:|
 | 1 (Very Low)             | Customer Changes 🔹<br>Unrealistic Customer Requests 🔹 | Declining Motivation 🔹 | Communication Problems 🔹 | - | - |
-| 2 (Low)                  | Permanent Staff Loss 🔹 | Too Many Features 🔸 | Documentation Failures 🔸<br>Complicated Testability 🔸 | Temporary Staff Absence 🔸<br>Difficult Re-Entry 🔸 | - |
+| 2 (Low)                  | - | Too Many Features 🔸 | Documentation Failures 🔸<br>Complicated Testability 🔸 | Temporary Staff Absence 🔸<br>Difficult Re-Entry 🔸 | Permanent Staff Loss 🔸 |
 | 3 (Medium)               | Hardware Failure 🔹 | Conflicts w/ Existing Software 🔸 | Lack of Testing 🔺 | Handover Errors to Mnestix 🔺 | - |
 | 4 (High)                 | - | Time Shortage 🔸 | - | - | Overload / Task Overcommitment 🔺 |
 | 5 (Very High)            | - | - | - | - | - |
@@ -136,6 +162,12 @@ To grant a smooth and secure development we need to assess possible risks:
 **Legend:**  
 🔹 = Low Risk 🔸 = Medium Risk 🔺 = High Risk
 
+# Financial aspects
+
+Working on the Mnestix Browser enhancement creates a lot of costs for the company.
+Seven employees make up the team that is required for this task. Every member brings unique skills and is specialized in another, so they serve in different roles during the project.
+During the 9 months every member is supposed to serve about 180 hours of worktime on the project.
+According to their following wages, the personnel costs are:
 
 ### Project Team Costs 
 
@@ -151,7 +183,11 @@ To grant a smooth and secure development we need to assess possible risks:
 | **Total**                |                     |                |       | **75,113** |
 
 
+
+
 ### Workload Distribution (hours per task, 180h per person)
+
+To structure the tasks and use everyone's most developed skills we provided a detailed time plan on how everyone will spend their time on the project.
 
 | Task                 | Felix Hennerich | Julian Schumacher | Bruno Lange | Nils Schäffner | Jan Kruske | Robin Kelm | Gregor Gottschewski |
 |----------------------|----------------|-----------------|------------|----------------|-----------|------------|-------------------|
@@ -167,6 +203,11 @@ To grant a smooth and secure development we need to assess possible risks:
 | Presentation         | 10             | 10              | 5         | 5             | 15        | 10         | 5                |
 | **Total**            | 180            | 180             | 180        | 180            | 180       | 180        | 180               |
 
+### Other costs
+
+In addition to the personnel costs other things are required to fulfill the job accordingly.
+These are:
+
 | Expense                 | Amount (€)      |
 |-------------------------|----------------|
 | Electricity             | 350.65         |
@@ -175,6 +216,10 @@ To grant a smooth and secure development we need to assess possible risks:
 | Test Server             | 205.56         |
 | **Total**               | 1,061.06       |
 
+### Overview
+
+To provide a detail overview what money is spent on the costs are displayed in this pie chart.
+Since every aspect is displayed individually we can analyse where we can save money in the next project.
 ```mermaid
    pie title Project Costs Breakdown
     "Documentation": 12686
@@ -191,8 +236,26 @@ To grant a smooth and secure development we need to assess possible risks:
     "Internet": 326
     "Test Server": 206
     "JetBrains Thunderstorm": 179
+```
 
 
+### Offer
+
+Making up an offer wasn't easy for the team. On the one hand we had to find the balance between creating enough profit to invest in the company's growth. 
+On the other hand Mnestix is an important customer and we do not want to lose them with a offer that is way too high.
+In the end we decided on a profit rate of **25%**.
+In addition we demand 5% of the total offer price annually to keep our service running and provide minor fixes and updates. Demands with larger scale will provide a separate offer again.
+
+### Overview
+
+| **Cost Type**        | **Amount (€)**  |
+|:----------------------|---------------:|
+| Personnel Costs       | 75,113.00      |
+| Other Costs           | 1,061.06       |
+| **Subtotal**          | —              |
+| Markup (×1.25)        | —              |
+| **Total Project Cost**| **95,217.58**  |
+| In Addition (per year)| 4,760.88       |
 
 
 
