@@ -1,10 +1,10 @@
 > [!CAUTION]
-> This document is only for company use!<br> Do not share with anybody, especially customers!<br>
+> This document is only for company use! Do not share with anybody, especially customers!
 > Only grant insight to supervisors for grading!
-# LOOK AT WORD VERSION AGAIN
 
 <h1 align="center">Business Case</h1>
-<h3 align="center"> by Nils Schäffner</h1>
+<h3 align="center"> Customer: Rentschler, Wojcik, XITASO</h3>
+<h3 align="center"> Created by Nils Schäffner</h3>
 
 
 | Version | Date       | Author         | Comment                                      |
@@ -73,9 +73,9 @@ Overall, the development increases productivity, reduces operational costs, and 
 
 # Time plan
 
-The projects starts at 19th September 2025 and will end in May 2026. The project is divided in to parts.
+The project starts at 19th September 2025 and will end in May 2026. The project is divided in two parts.
 The first phase starts at 19th September 2025 and ends with the 30th November 2025. The second phase starts at 9th March 2026 and ends in May 2026.
-To use the teams time effectifely a structured plan is needed.
+To use the teams time effectively a structured plan is needed.
 This plan is provided in the two following gantt diagrams, which display every task in detail:
 
 ### Gantt 1st phase
@@ -212,7 +212,7 @@ These are:
 |-------------------------|----------------|
 | Electricity             | 350.65         |
 | Internet                | 325.75         |
-| JetBrains Thunderstorm  | 19.90 × 9 = 179.10 |
+| JetBrains WebStorm  | 19.90 × 9 = 179.10 |
 | Test Server             | 205.56         |
 | **Total**               | 1,061.06       |
 
@@ -235,14 +235,14 @@ Since every aspect is displayed individually we can analyse where we can save mo
     "Electricity": 351
     "Internet": 326
     "Test Server": 206
-    "JetBrains Thunderstorm": 179
+    "JetBrains WebStorm": 179
 ```
 
 
 ### Offer
 
 Making up an offer wasn't easy for the team. On the one hand we had to find the balance between creating enough profit to invest in the company's growth. 
-On the other hand Mnestix is an important customer and we do not want to lose them with a offer that is way too high.
+On the other hand Mnestix is an important customer and we do not want to lose them with an offer that is way too high.
 In the end we decided on a profit rate of **25%**.
 In addition we demand 5% of the total offer price annually to keep our service running and provide minor fixes and updates. Demands with larger scale will provide a separate offer again.
 
