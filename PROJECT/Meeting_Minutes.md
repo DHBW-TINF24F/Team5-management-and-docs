@@ -142,7 +142,7 @@ The next meeting is planned for Friday, 10.10.2025.
 ### To-Do’s
 | **To-Do**                       | **Responsible Person(s)** | **Due Date** |
 |---------------------------------|----------------------------|--------------|
-| User Storys to Github | Felix Hennerich | 10.10.2025 |
+| User Stories to Github | Felix Hennerich | 10.10.2025 |
 | Setup Meeting Minutes File | Felix Hennerich | 10.10.2025 |
 
 **Notes:**  
