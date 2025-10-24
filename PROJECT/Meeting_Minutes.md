@@ -57,15 +57,17 @@ Gregor Gottschewski, Julian Schumacher, Nils Schäffner, Bruno Lange, Felix Henn
 | No. | Topic           | Responsibility | Time (min) |
 |-----|-----------------|----------------|-------------|
 | 1   | Documents       | All            | 10          |
-| 2   | Github Project            | All            | 5           |
+| 2   | Github Project & pages          | All            | 5           |
 | 3   | Weekly Meetings | All            | 5           |
+| 4   | Document timelines | All            | 10           |
+| 4   | Plan developement start | All            | 5           |
 
 </td>
     <td style="width:40%; vertical-align:bottom; text-align:center;">
 
 **Location:** DHBW Stuttgart  
 **Date:** 10.10.2025  
-**Time:** 20 min
+**Time:** 35 min
 **Moderator:** Felix Hennerich 
 
 </td>
