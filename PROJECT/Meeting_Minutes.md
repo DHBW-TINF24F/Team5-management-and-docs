@@ -79,6 +79,9 @@ Gregor Gottschewski, Julian Schumacher, Nils Schäffner, Bruno Lange, Felix Henn
 
 ### I. Goal
 In this meeting, there was a brief overview of the issues in the GitHub repo, with the task of selecting issues. Weekly meetings were scheduled, and it was clearly defined who would be writing which document.
+It was also discussed the submissions and deadlines for the third semester. The following documents are required: BC, SAS, CRS, SRS, PM, and presentation.
+**Deadline: 31.10.2025**
+**Presentation: 1 Week later**
 
 ### II. Status
 ✔️ Meeting Minutes created
