@@ -14,6 +14,7 @@
 |----------|------|---------|-------------|
 | 1.0 | 18.10.2025 | Julian Schumacher | Initial Version |
 | 1.1 | 24.10.2025 | Julian Schumacher | Update structure and navigation |
+| 1.2 | 24.10.2025 | Julian Schumacher | restructure requirements |
 
 ---
 
@@ -38,6 +39,8 @@ The purpose of this Customer Requirements Specification (CRS) is to define the b
 
 The project aims to improve usability, performance, and functional completeness of the Mnestix Product Catalog by addressing existing shortcomings and implementing new features that make the platform more accessible to non-technical users such as engineers, product managers, and customers in said industrial settings.
 
+This document does not include technical implementation details but focuses on the requirements from a customer and stakeholder perspective.
+
 ### Objectives
 - Enhance the user interface (UI) for improved clarity and responsiveness.  
 - Introduce configuration flexibility for connected repositories.  
@@ -54,6 +57,7 @@ Eclipse Mnestix is an open-source project that provides a web-based interface fo
 The project aligns with initiatives from the Industrial Digital Twin Association (IDTA) and integrates with infrastructures such as Eclipse BaSyx.
 
 Current Mnestix implementations primarily target developers and technical users. The usability and visual clarity of its product catalog are limited, leading to a steep learning curve for less technical stakeholders.
+In order to provide a much simpler and more efficient user experience, this project focuses on enhancing the Mnestix Product Catalog to better serve a broader audience such as product managers and customers.
 
 ### 2.2 Project Scope
 The scope of this project includes:
@@ -70,10 +74,10 @@ The scope of this project includes:
 | Stakeholder | Role / Interest | Expectations | Influence |
 |--------------|----------------|---------------|-----------|
 | **End Users (Engineers, Product Managers)** | Daily users of the catalog | Simple navigation, clear data presentation, stable performance | High |
-| **Developers / Maintainers** | Implement new features and fix issues | Clean modular architecture, minimal technical debt | High |
+| **Developers / Maintainers** | Implement new features and fix issues | Clean modular architecture, minimal technical debt, good documentation | High |
 | **Eclipse & IDTA** | Ecosystem coordinators | Alignment with Industry 4.0 standards | Medium |
-| **Academic Supervisors / Project Sponsors** | Oversight and evaluation | Comprehensive documentation and measurable improvement | Medium |
-| **Community Contributors** | Potential future maintainers | Clear contribution guidelines, usable interface | Low |
+| **Academic Supervisors / Project Sponsors** | Oversight and evaluation | Comprehensive documentation, measurable improvement and requirement satisfaction | Medium |
+| **Community Contributors** | Potential future maintainers | Clear contribution guidelines, usable interface, understandable codebase | Low |
 
 ---
 
@@ -87,25 +91,29 @@ The current Mnestix Product Catalog provides:
 
 ### 4.2 Identified Problems
 - **Usability issues:** Non-intuitive interface layout, limited user guidance.
-- **Performance issues:** Repository loading blocks the UI thread, causing long waiting times.
+- **Performance issues:** Repository loading can take long and blocks the UI. Loading of Thumbnails for all products at once causes delays.
 - **Lack of configurability:** Repositories cannot be selectively enabled or disabled.
 - **Poor data visibility:** Insufficient support for filtering, sorting, and previewing data.
 - **Visual inconsistencies:** Misaligned formatting and table rendering in submodel views.
-- **Limited integration:** No seamless access to related tools such as the Nameplate Generator.
+- **Limited integration:** No seamless access in the user flow to related tools such as the Nameplate Generator.
 - **Missing eShop functionality:** Users cannot interactively add products to a cart or view selected items.
 
 ### 4.3 Business Impact
 These issues limit the adoption of the Mnestix Product Catalog in industrial contexts, particularly by non-developers. Improving usability and accessibility is crucial for broader acceptance and alignment with Industry 4.0 usability expectations.
+Completing this project will enhance user satisfaction and will therefore increase the user base. It will also increase productivity and promote the use of digital twins in industrial applications.
 
 ---
 
 ## 5. General Requirements
 
-1. The application shall display the **user login status** permanently in the header section.  
+1. The application shall display the **user login status** permanently in the header section.
 2. The system shall provide an **improved configuration view** to manage connected repositories.  
 3. The catalog shall be **visually modernized** to improve readability and information density.  
 4. The overall **performance** and **responsiveness** of the application must be improved.  
-5. The system must remain **open-source** and compatible with existing Mnestix and BaSyx ecosystems.  
+5. The system must remain **open-source** and compatible with existing Mnestix and BaSyx ecosystems.
+6. The application shall support related tools such as the **Nameplate Generator** directly from the product view.  
+7. The system shall implement **eShop-like features** for product selection and cart management.
+8. In the product overview, related AAS entities shall be **clickable links** for easy navigation. 
 
 ---
 
@@ -122,7 +130,7 @@ These issues limit the adoption of the Mnestix Product Catalog in industrial con
 - The catalog shall support **searching and filtering** across all repositories.  
 
 ### 6.3 Product List
-- Product data shall load **asynchronously (non-blocking)** to prevent UI freezing.  
+- 
 - Only **AAS objects of type `AssetKind == Type`** shall be displayed by default.  
 - The list shall include columns for:
   - `ManufacturerName`
