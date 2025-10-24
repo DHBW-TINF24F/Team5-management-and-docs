@@ -1,5 +1,13 @@
 # Meeting Minutes - Team 5 Mnestix Product Catalogue
 
+| Version | Date       | Author         | Comment                                      |
+|:--------:|:-----------:|:---------------:|:---------------------------------------------|
+| 1.0 | 19.09.2025 | Felix Hennerich | Initialize document structure and first Meeting Info          |
+| 1.1  | 26.09.2025 | Felix Hennerich | Second Meeting and Conventions |
+| 1.2 | 10.10.2025 | Felix Hennerich | Next steps in the Project|
+| 1.3 | 17.10.2025 | Felix Hennerich | Business Case |
+| 1.4 | 24.10.2025 | Felix Hennerich | Versions at the top |
+
 ## Table of Contents
 - [Meeting 17.10.2025 - Business Case](#bc)
 - [Meeting 10.10.2025 - Next Steps](#next-steps)
@@ -49,15 +57,17 @@ Gregor Gottschewski, Julian Schumacher, Nils Schäffner, Bruno Lange, Felix Henn
 | No. | Topic           | Responsibility | Time (min) |
 |-----|-----------------|----------------|-------------|
 | 1   | Documents       | All            | 10          |
-| 2   | Github Project            | All            | 5           |
+| 2   | Github Project & pages          | All            | 5           |
 | 3   | Weekly Meetings | All            | 5           |
+| 4   | Document timelines | All            | 10           |
+| 4   | Plan developement start | All            | 5           |
 
 </td>
     <td style="width:40%; vertical-align:bottom; text-align:center;">
 
 **Location:** DHBW Stuttgart  
 **Date:** 10.10.2025  
-**Time:** 20 min
+**Time:** 35 min
 **Moderator:** Felix Hennerich 
 
 </td>
@@ -71,6 +81,9 @@ Gregor Gottschewski, Julian Schumacher, Nils Schäffner, Bruno Lange, Felix Henn
 
 ### I. Goal
 In this meeting, there was a brief overview of the issues in the GitHub repo, with the task of selecting issues. Weekly meetings were scheduled, and it was clearly defined who would be writing which document.
+It was also discussed the submissions and deadlines for the third semester. The following documents are required: BC, SAS, CRS, SRS, PM, and presentation.
+**Deadline: 31.10.2025**
+**Presentation: 1 Week later**
 
 ### II. Status
 ✔️ Meeting Minutes created
