@@ -1,5 +1,13 @@
 # Meeting Minutes - Team 5 Mnestix Product Catalogue
 
+| Version | Date       | Author         | Comment                                      |
+|:--------:|:-----------:|:---------------:|:---------------------------------------------|
+| 1.0 | 19.09.2025 | Felix Hennerich | Initialize document structure and first Meeting Info          |
+| 1.1  | 26.09.2025 | Felix Hennerich | Second Meeting and Conventions |
+| 1.2 | 10.10.2025 | Felix Hennerich | Next steps in the Project|
+| 1.3 | 17.10.2025 | Felix Hennerich | Business Case |
+| 1.4 | 24.10.2025 | Felix Hennerich | Versions at the top |
+
 ## Table of Contents
 - [Meeting 17.10.2025 - Business Case](#bc)
 - [Meeting 10.10.2025 - Next Steps](#next-steps)
