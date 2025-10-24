@@ -43,7 +43,7 @@ In the following sections, the customer’s order will be presented in detail, w
 Mnestix Product Catalogue is a web-based open-source software designed to simplify the implementation of the Asset Administration Shell (AAS). Its main purpose is to support the creation and management of digital product catalogues, offering various features for browsing and organizing catalogue data.
 However, several important usability and functionality aspects are still missing from a user perspective. The planned improvements will mainly focus on enhancing the application’s usability and integrating additional services such as the Nameplate Generator. Furthermore, eShop functionalities (e.g., Add to Cart, Show Cart) will be introduced, and the presentation of documentation and technical data will be refined.
 The project also aims to improve product search, filtering, and data visualization while ensuring smoother interaction with repositories. In addition, the team will analyze existing features, evaluate the current usability concept, and implement targeted improvements to increase overall efficiency and user satisfaction.
-For detailed requirements see SRS.
+For detailed requirements see [SRS](https://github.com/DHBW-TINF24F/Team5-management-and-docs/blob/main/PROJECT/software-requirements-specification.md).
 
 
 # Qualitative and quantitative benefits of development
@@ -151,7 +151,7 @@ To grant a smooth and secure development we need to assess possible risks in ord
 ## Risk Matrix
 We evaluate every risk with probability and impact to create a handy overview to see the most dangerous risks on first sight:
 
-| Probability ↓ / Impact → | 1 (Low) | 2 | 3 | 4 | 5 (High) |
+| Impact → / Probability ↓  | 1 (Low) | 2 | 3 | 4 | 5 (High) |
 |---------------------------|:-------:|:--:|:--:|:--:|:---------:|
 | 1 (Very Low)             | Customer Changes 🔹<br>Unrealistic Customer Requests 🔹 | Declining Motivation 🔹 | Communication Problems 🔹 | - | - |
 | 2 (Low)                  | - | Too Many Features 🔸 | Documentation Failures 🔸<br>Complicated Testability 🔸 | Temporary Staff Absence 🔸<br>Difficult Re-Entry 🔸 | Permanent Staff Loss 🔸 |
@@ -164,7 +164,7 @@ We evaluate every risk with probability and impact to create a handy overview to
 
 # Financial aspects
 
-Working on the Mnestix Browser enhancement creates a lot of costs for the company.
+Working on the Mnestix Browser enhancement creates numerous costs for the company.
 Seven employees make up the team that is required for this task. Every member brings unique skills and is specialized in another, so they serve in different roles during the project.
 During the 9 months every member is supposed to serve about 180 hours of worktime on the project.
 According to their following wages, the personnel costs are:
