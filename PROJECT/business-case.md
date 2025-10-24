@@ -36,7 +36,7 @@
 # Introduction
 
 This document outlines the business case for the upcoming software project. The project team has successfully collaborated on multiple projects in the past, continuously developing strong web engineering expertise to deliver high-quality digital products.
-In the following sections, the customer’s order will be presented in detail, with a particular focus on the value and benefits our solution will provide to the client. Furthermore, this document serves as the formal business proposal submitted to the customer. It includes a comprehensive time and risk analysis, followed by a detailed cost estimation required to successfully complete the project.
+In the following sections, the customer’s order will be presented in detail, with a particular focus on the value and benefits our solution will provide to the client. Furthermore, this document outlines the process that led to the customer cost offer. It includes a comprehensive time and risk analysis, followed by a detailed cost estimation required to successfully complete the project.
 
 # Scope
 
