@@ -35,7 +35,7 @@ Required for reading this specification is knowledge about the Mnestix Browser a
 This specification uses terms 'modern hardware' and 'stable connection to the backend' often.
 The software was tested on a MacBook Pro 2024 (M4 Pro, 48 GB, macOS 15.7.1) with a local Mnestix Browser build.
 All loading times etc. refer to this machine and environment.
-Please note that the repository size influences the loading time.
+Note that the repository size influences the loading time.
 This software was tested with a 100 item repository.
 
 ### Scope
@@ -198,8 +198,6 @@ It does not implement money transaction or other interfaces to buy a product.
 
 ### Performance requirements
 
-### Logical database requirements
-
 ### Software system attributes
 
 #### Reliability
@@ -210,22 +208,19 @@ It does not implement money transaction or other interfaces to buy a product.
 
 #### Maintainability
 
-#### Portability
+In order to make the changes of project Bisasam maintainable, the developer team ships a documentation of code and functionality at project hand over.
+This document should have two parts:
 
-### Functional requirements
+1. User Instructions
+2. Technical Documentation
 
-Project Bisasam should add following features to Mnestix Browser.
+The user instructions must be written in a understandable way for all types of users defined in the chapter [user characteristics](#user-characteristics).
+The technical documentation should cover an overview of project Bisasam written for developers.
 
-* **Login status:** A symbol in the upper right corner in the menubar should inform the user about their login state.
-* **Configuration dialog:** Users should enable or disable individual AAS repositories and configure CD repositories.
-* **Content display:** Users should be able to allow inspection of CD repository contents.
-* **Repository count:** The number of available products per repository should be visible in the respository view.
-* **Filter and sort options:** The product lists should be filterable and sorted via query parameters.
-* **Visible columns:** The columns `ManufacturerName`, `ProductDesignation`, `OrderCode`, `ManufacturerCode`, `GlobalAssetId`, `CreatedAt` should be visible in the product list.
-* **Sorting:** Entries in the product list should be sortable by column.
-* **Nameplate generator integration (NGI):** The NGI should be accessible from the product context menu.
-* **Submodel visualization:** Linked AAS references should are navigable and SM TechnicalData and HandoverDocumentation should have improved formatting.
-* **Shop functions:** `addToCart` and `showCart` should be added with a small cart overview.
+To increase development maintainability, new project Bisasam functionalities have to be commented in a proper way.
+Project Bisasam adopts official Mnestix' code specification and conventions.
+
+See [Mnestix Code Conventions]() for more information.
 
 ### Usability requirements
 
@@ -239,9 +234,3 @@ See [Definitions and Acronyms](#definitions-and-acronyms) for more information.
 #### Control description
 
 ### Environment characteristics
-
-#### Hardware
-
-#### Peripherals
-
-#### Users
