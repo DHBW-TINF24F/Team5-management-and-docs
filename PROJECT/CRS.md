@@ -1,7 +1,7 @@
 # Customer Requirements Specification (CRS)
 
 ## Project: Eclipse Mnestix Product Catalog
-**Version:** 1.6  
+**Version:** 1.7  
 **Author:** Julian Schumacher  
 **Date:** 26.10.2025  
 **Institution:** DHBW Stuttgart
