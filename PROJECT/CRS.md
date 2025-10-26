@@ -1,7 +1,7 @@
 # Customer Requirements Specification (CRS)
 
 ## Project: Eclipse Mnestix Product Catalog
-**Version:** 1.5  
+**Version:** 1.6  
 **Author:** Julian Schumacher  
 **Date:** 26.10.2025  
 **Institution:** DHBW Stuttgart
@@ -18,6 +18,7 @@
 | 1.3 | 25.10.2025 | Julian Schumacher | update requirements and remove system architecture |
 | 1.4 | 26.10.2025 | Julian Schumacher | add user groups |
 | 1.5 | 26.10.2025 | Julian Schumacher | update document structure and contents according to DIN 69901-5 |
+| 1.6 | 26.10.2025 | Julian Schumacher | fix typos |
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
@@ -132,7 +133,7 @@ The product list view shall retrieve AAS data asynchronously to avoid blocking t
 ### FR-06
 The product list shall view the following attributes for each AAS entry:
 
-- ManufactorerName
+- ManufacturerName
 - ProductDesignation
 - OrderCode
 - ManufacturerCode
