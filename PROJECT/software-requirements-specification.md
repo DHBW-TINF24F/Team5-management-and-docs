@@ -43,11 +43,11 @@ This software was tested with a 100 item repository.
 
 The name of the product specified here is _Project Bisasam_.
 Project Bisasam refers only to the extensions specified later.
-The name Mnestix is not affected and stays.
+The name Mnestix stays.
 
 Project Bisasam extends the usability and functionality of Mnestix' catalogue feature.
 These extensions affect the catalogue/repository dashboard, the product list, the product view and the menu bar.
-Project Bisasam covers only the UI extensions specified in this SRS. It does not affect the Mnestix core system.
+Project Bisasam covers only the UI extensions specified in this SRS.
 All changes strictly refer to the UI.
 
 The goal of project Bisasam is to add additional UI features to increase the Mnestix user experience.
@@ -61,8 +61,7 @@ The goal of project Bisasam is to add additional UI features to increase the Mne
 
 ### Overview
 
-This SRS does not strictly follow ISO/IEC/IEEE standard 29148:2018.
-Some parts of this SRS follow the older standard IEEE 830-1984 because [TODO: but why?]
+This SRS follows ISO/IEC/IEEE standard 29148:2018 and the older standard IEEE 830-1984.
 
 ## Overall description
 
@@ -109,14 +108,14 @@ All new UI elements are integrated into the existing Mnestix UI.
 Users interact with project Bisasam's extension on all views.
 Some extensions affect the repository configuration view and the catalog selection view.
 The product view, responsible for listing all products, and the product detail view are part of project Bisasam's extensions.
-These changes do not affect Mnestix' UI principles.
+These changes keep all extisting Mnestix' UI principles.
 
 These changes follow Mnestix’s existing design principles.
 All affected elements are configurable and/or selectable by the user.
 
 #### Operations
 
-Project Bisasam does not change administration behaviour.
+Project Bisasam shall maintain the existing administration behaviour.
 Some new features add additional log messages to provide information.
 These log messages are not specified and will only be added if necessarily need for development or administration.
 
@@ -181,12 +180,12 @@ It has to be acessable for every user group and should bring all relevant inform
 > See [limitations](#limitations) for more information about the shop.
 > Project Bisasam assumes that guests are called upon to register before buying a product.
 
-Project Bisasam does not change Mnestix' user management nor user rules/rights.
+Project Bisasam shall preserve the existing Mnestix user management functionality unchanged.
 
 ### Limitations
 
-Project Bisasam covers a shop function with a chart.
-It does not implement money transaction or other interfaces to buy a product.
+Project Bisasam covers a shop function with a cart.
+Money transactions are outside the scope of this project.
 
 ### Assumptions and dependencies
 
@@ -246,15 +245,15 @@ UNGENAUIGKEIT BEI Im Konfigurationsdialog sollen die Einstelloptionen verfeinert
 
 ### External interface requirements
 
-Project Bisasam does not change input or output behaviour, including APIs to Repositories.
+Project Bisasam shall keep existing APIs and external interfaces.
 
 #### Availability
 
-Project Bisasam should not change Mnestix' stability and availability.
+Project Bisasam shall maintain the existing stability and availability of the Mnestix Browser.
 
 #### Security and privacy
 
-Project Bisasam does not change any critical part of Mnestix Browser.
+Project Bisasam keeps Menstix Browser secure by keeping all security related features untouched.
 The developer Team informed the customer that FR1 could lead to privacy problems when working in public, because the user name is visible on every view in the upper right corner.
 
 #### Maintainability
