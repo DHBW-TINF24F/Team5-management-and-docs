@@ -246,15 +246,16 @@ UNGENAUIGKEIT BEI Im Konfigurationsdialog sollen die Einstelloptionen verfeinert
 
 ### External interface requirements
 
-### Performance requirements
-
-### Software system attributes
-
-#### Reliability
+Project Bisasam does not change input or output behaviour, including APIs to Repositories.
 
 #### Availability
 
-#### Security
+Project Bisasam should not change Mnestix' stability and availability.
+
+#### Security and privacy
+
+Project Bisasam does not change any critical part of Mnestix Browser.
+The developer Team informed the customer that FR1 could lead to privacy problems when working in public, because the user name is visible on every view in the upper right corner.
 
 #### Maintainability
 
@@ -272,15 +273,7 @@ Project Bisasam adopts official Mnestix' code specification and conventions.
 
 See [Mnestix Code Conventions]() for more information.
 
-### Usability requirements
+## Verification
 
-The product list should load images in less than two seconds on modern hardware and a stable connection to the backend.
-See [Definitions and Acronyms](#definitions-and-acronyms) for more information.
-
-#### Functional partitioning
-
-#### Functional description
-
-#### Control description
-
-### Environment characteristics
+See [Specific Requirements](#specific-requirements) for more information about verification.
+Because most requirements affect the user interface, these requirements are checked using a demonstration in a controlled environment.
