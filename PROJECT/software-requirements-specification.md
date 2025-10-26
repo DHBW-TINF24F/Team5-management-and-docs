@@ -30,7 +30,8 @@ Required for reading this specification is knowledge about the Mnestix Browser a
 **_Mnestix_** is a short form of Mnestix Browser.  
 **_Power users_** are software users that spend a long time using the software.  
 **_Regular users_** are software users that use the software sometimes.  
-**_Guest_** is a user that is not registered at the Mnestix Browser instance.
+**_Guest_** is a user that is not registered at the Mnestix Browser instance.  
+**_Product_** is a synonym for AAS.
 
 This specification uses terms 'modern hardware' and 'stable connection to the backend' often.
 The software was tested on a MacBook Pro 2024 (M4 Pro, 48 GB, macOS 15.7.1) with a local Mnestix Browser build.
@@ -56,6 +57,7 @@ The goal of project Bisasam is to add additional UI features to increase the Mne
 * Features requests where made by our supervising lecturer and can be found at the [DHBW-TINF24F GitHub Organization (root/project-5)](https://github.com/DHBW-TINF24F/.github/blob/main/project5_mnestix_product_catalogue.md)
 * The structure of this SRS follows the [ISO/IEC/IEEE 29148:2018 standard](https://ieeexplore.ieee.org/document/8559686)
 * Information about Mnestix Browser can be found on [Mnestix-Browser GitHub](https://github.com/eclipse-mnestix/mnestix-browser)
+* Requirements table follows [ISO/IEC/IEEE 29148 standard](https://ieeexplore.ieee.org/document/8559686)
 
 ### Overview
 
@@ -193,6 +195,54 @@ It does not implement money transaction or other interfaces to buy a product.
 * The Mnestix Browser fork of project Bisasam is installed correctly
 
 ## Specific requirements
+
+Project Bisasam should add following features to Mnestix Browser.
+
+Verification methods:
+
+* **Test:** Tested by running the system and with logic tests.
+* **Demonstration:** Show feature in running system, requirement is visible to user.
+* **Inspection:** Requirement can be checked with code analysis or UI-layout-analysis.
+* **Load-Test:** Requirement can be tested on modern hardware with an automatic or manual load test.
+
+| ID | Requirement Description | Priority | Rationale | Verification Method |
+|----|--------------------------|-----------|------------|----------------------|
+| **FR.001** | The system shall display a symbol in the upper-right corner of the menu bar that indicates the current login status of the user. | Required | Provides clear user feedback about authentication state. | Inspection |
+| **FR.002** | The system should integrate all functions and menus of the existing login status button into the new login status symbol. | Optional | Simplifies user interface and centralizes login actions. | Demonstration |
+| **FR.003** | The system shall display the number of AAS entries per repository in the repository view, next to the repository name. | Required | Improves repository transparency and usability. | Test |
+| **FR.004** | The system shall provide access to the Nameplate Generator from the product context menu using the given implementation repository. | Required | Enables generation of digital nameplates directly from products. | Test |
+| **FR.005** | The system shall display the columns `ManufacturerName`, `ProductDesignation`, `OrderCode`, `ManufacturerCode`, `GlobalAssetId`, and `CreatedAt` in the AAS list. | Required | Ensures consistent presentation of key AAS data. | Inspection |
+| **FR.006** | The system shall allow users to filter the AAS list based on query parameters. | Required | Improves data navigation and usability. | Test |
+| **FR.007** | The system shall allow users to sort the AAS list entries by any available column. | Required | Provides flexible and efficient data access. | Test |
+| **FR.008** | The system shall provide a cart view accessible via the sidebar and under the path `/cart`. | Required | Central entry point for shopping workflow. | Test |
+| **FR.009** | The system shall list all products added to the cart in the cart view. | Required | Ensures cart transparency and user awareness. | Test |
+| **FR.010** | The system shall allow users to edit product quantities within the cart view. | Required | Supports quantity management before checkout. | Test |
+| **FR.011** | Each product view shall contain an “Add to cart” button allowing the user to add the product to the cart. | Required | Enables product selection workflow. | Test |
+| **FR.012** | The sidebar shall display the total number of products currently in the cart. | Required | Provides quick cart overview. | Inspection |
+| **FR.013** | The system should allow enabling or disabling the shop functionality through an environment variable in the `.env` file. | Optional | Allows deployment flexibility. | Inspection |
+| **FR.014** | The system should support integration with an external payment provider. | Optional | Enables online payment features. | Demonstration |
+| **FR.015** | The system should display a price for each product when the shop module is enabled. | Optional | Increases product transparency for users. | Inspection |
+| **FR.016** | The system shall allow users to enable or disable individual AAS repositories within the configuration dialog. | Required | Supports selective repository management. | Test |
+| **FR.017** | The system shall allow users to configure CD repositories through the configuration dialog. | Required | Provides management of connected data repositories. | Test |
+| **FR.018** | The system should allow users to inspect the contents of CD repositories through the user interface. | Optional | Enhances transparency of CD data. | Demonstration |
+| **FR.019** | The system should improve the formatting of the `SM TechnicalData` submodel for better readability. | Optional | Enhances user understanding of technical data. | Inspection |
+| **FR.020** | The system should improve the formatting of the `HandoverDocumentation` submodel for better readability. | Optional | Increases usability for document-related submodels. | Inspection |
+| **FR.021** | The system should allow navigation through linked AAS references within submodel visualizations. | Optional | Enables seamless exploration of linked AAS data. | Demonstration |
+| **FR.022** | The configuration dialog shall provide refined options for managing repositories, including CD repository configuration and activation control. | Required | Centralizes repository management and user control. | Test |
+
+UNGENAUIGKEIT BEI Im Konfigurationsdialog sollen die Einstelloptionen verfeinert werden: CD-Repositories sollen konfiguriert werden können, Es soll eine inhaltliche Anzeige des/der CD-Repositories möglich sein., Die Anzeige des SM TechnicalData soll benutzerfreundlicher erfolgen.
+
+### Non-Functional Requirements (NFR)
+
+| ID | Requirement Description | Category | Rationale | Verification Method |
+|----|--------------------------|-----------|------------|----------------------|
+| **NFR.001** | The system shall load the AAS list with up to 100 entries in under 3 seconds. | Performance | Ensures responsive user experience. | Measurement |
+| **NFR.002** | The system shall support concurrent access by at least 10 users without degradation of performance. | Performance | Allows collaborative usage. | Load Test |
+| **NFR.003** | The system shall log all configuration changes and user actions that affect repositories. | Security | Enables traceability and auditing. | Inspection |
+| **NFR.004** | The interface shall remain responsive when resizing the browser window or using mobile devices. | Usability | Improves cross-device compatibility. | Demonstration |
+| **NFR.005** | The system shall be compatible with current versions of Chrome, Firefox, and Safari. | Compatibility | Ensures cross-browser usability. | Test |
+| **NFR.006** | The system shall provide localized text resources in English and German. | Maintainability | Supports internationalization and user adoption. | Inspection |
+| **NFR.007** | Source code shall follow consistent linting and formatting rules defined in the project. | Maintainability | Ensures consistent code quality. | Inspection |
 
 ### External interface requirements
 
