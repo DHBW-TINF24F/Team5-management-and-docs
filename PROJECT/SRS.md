@@ -12,6 +12,8 @@ The software and this specification was developed in connection with a universit
 
 > Read the [IEEE Guide to Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=278253) or [IEEE Recommended Practice for Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=720574) before contributing to the SRS.
 
+## Table of Contents
+
 ## Introduction
 
 ### Purpose
