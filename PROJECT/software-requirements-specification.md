@@ -5,7 +5,7 @@ The software and this secification was developed in connection with a university
 
 **Author:** Gregor Gottschewski
 
-**Date of last revision:** 26.09.2025
+**Date of last revision:** 26.10.2025
 
 > Read the [IEEE Guide to Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=278253) or [IEEE Recommended Practice for Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=720574) before contributing to the SRS.
 
@@ -112,6 +112,8 @@ These changes keep all extisting Mnestix' UI principles.
 
 These changes follow Mnestix’s existing design principles.
 All affected elements are configurable and/or selectable by the user.
+
+Following wireframes for all UI related requirements listed in [Specific Requirements](#specific-requirements).
 
 #### Operations
 
@@ -227,7 +229,6 @@ Verification methods:
 | **FR.019** | The system should improve the formatting of the `SM TechnicalData` submodel for better readability. | Optional | Enhances user understanding of technical data. | Inspection |
 | **FR.020** | The system should improve the formatting of the `HandoverDocumentation` submodel for better readability. | Optional | Increases usability for document-related submodels. | Inspection |
 | **FR.021** | The system should allow navigation through linked AAS references within submodel visualizations. | Optional | Enables seamless exploration of linked AAS data. | Demonstration |
-| **FR.022** | The configuration dialog shall provide refined options for managing repositories, including CD repository configuration and activation control. | Required | Centralizes repository management and user control. | Test |
 
 UNGENAUIGKEIT BEI Im Konfigurationsdialog sollen die Einstelloptionen verfeinert werden: CD-Repositories sollen konfiguriert werden können, Es soll eine inhaltliche Anzeige des/der CD-Repositories möglich sein., Die Anzeige des SM TechnicalData soll benutzerfreundlicher erfolgen.
 
