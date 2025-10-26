@@ -1,7 +1,10 @@
 # Software Requirements Specification
 
+Revision history: This SRS is tracked with Git.
+See the commit history on [GitHub](https://github.com/DHBW-TINF24F/Team5-management-and-docs/commits/).
+
 This Software Requirements Specification (SRS) specifies the work of group 5.
-The software and this secification was developed in connection with a university project.
+The software and this specification was developed in connection with a university project.
 
 **Author:** Gregor Gottschewski
 
@@ -35,7 +38,7 @@ Required for reading this specification is knowledge about the Mnestix Browser a
 
 This specification uses terms 'modern hardware' and 'stable connection to the backend' often.
 The software was tested on a MacBook Pro 2024 (M4 Pro, 48 GB, macOS 15.7.1) with a local Mnestix Browser build.
-All loading times etc. refer to this machine and environment.
+All loading times refer to this machine and environment.
 Note that the repository size influences the loading time.
 This software was tested with a 100 item repository.
 
@@ -126,9 +129,9 @@ These log messages are not specified and will only be added if necessarily need 
 The software adds new UI elements and features stated in section [User interfaces](#user-interfaces).
 The following content adds additional, non UI-features, and refers to user interfaces.
 
-To increase Mnestix Browser's performance, the code base of the product list should be improved.
-Thumbnails should only load on the user's visible screen.
-Additionally to performance improvements, the user experience should be increased.
+To increase Mnestix Browser's performance, the code base of the product list should be extended.
+Thumbnails shall only load on the user's visible screen.
+Additionally to performance improvements, the user experience shall be increased.
 These new features cover filtering, sorting and detailed product information.
 Some features do not enhance existing features but add new features.
 Part of this are eShop interactions and integration of an external nameplate generator.
@@ -173,11 +176,11 @@ mindmap
 
 Four types of users uses Mnestix Browser: administrators, power users, regular users and guests.
 All user groups benefit from project Bisasam's new features.
-However, the focus should be the regular and power users as well as the administrator.
+However, the focus shall be the regular and power users as well as the administrator.
 These user groups need fast and reliable features.
 
 The cart and shop feature is the most critical part of project Bisasam.
-It has to be acessable for every user group and should bring all relevant information about the selected products.
+It has to be accessible for every user group and should bring all relevant information about the selected products.
 
 > See [limitations](#limitations) for more information about the shop.
 > Project Bisasam assumes that guests are called upon to register before buying a product.
@@ -195,16 +198,16 @@ Money transactions are outside the scope of this project.
 * No modifications of the core Mnestix Browser are allowed
 * The Mnestix Browser fork of project Bisasam is installed correctly
 
-## Specific requirements
+## Specific features
 
-Project Bisasam should add following features to Mnestix Browser.
+Project Bisasam shall add following features to Mnestix Browser.
 
 Verification methods:
 
 * **Test:** Tested by running the system and with logic tests.
 * **Demonstration:** Show feature in running system, requirement is visible to user.
 * **Inspection:** Requirement can be checked with code analysis or UI-layout-analysis.
-* **Load-Test:** Requirement can be tested on modern hardware with an automatic or manual load test.
+* **Load Test:** Requirement can be tested on modern hardware with an automatic or manual load test.
 
 | ID | Requirement Description | Priority | Rationale | Verification Method |
 |----|--------------------------|-----------|------------|----------------------|
@@ -220,7 +223,7 @@ Verification methods:
 | **FR.010** | The system shall allow users to edit product quantities within the cart view. | Required | Supports quantity management before checkout. | Test |
 | **FR.011** | Each product view shall contain an “Add to cart” button allowing the user to add the product to the cart. | Required | Enables product selection workflow. | Test |
 | **FR.012** | The sidebar shall display the total number of products currently in the cart. | Required | Provides quick cart overview. | Inspection |
-| **FR.013** | The system should allow enabling or disabling the shop functionality through an environment variable in the `.env` file. | Optional | Allows deployment flexibility. | Inspection |
+| **FR.013** | The system should allow enabling or disabling the shop functionality through an environment variable in the `.env` file (`SHOP_EANBLED_FLAG`). | Optional | Allows deployment flexibility. | Inspection |
 | **FR.014** | The system should support integration with an external payment provider. | Optional | Enables online payment features. | Demonstration |
 | **FR.015** | The system should display a price for each product when the shop module is enabled. | Optional | Increases product transparency for users. | Inspection |
 | **FR.016** | The system shall allow users to enable or disable individual AAS repositories within the configuration dialog. | Required | Supports selective repository management. | Test |
@@ -254,13 +257,13 @@ Project Bisasam shall maintain the existing stability and availability of the Mn
 
 #### Security and privacy
 
-Project Bisasam keeps Menstix Browser secure by keeping all security related features untouched.
+Project Bisasam keeps Mnestix Browser secure by keeping all security related features untouched.
 The developer Team informed the customer that FR1 could lead to privacy problems when working in public, because the user name is visible on every view in the upper right corner.
 
 #### Maintainability
 
 In order to make the changes of project Bisasam maintainable, the developer team ships a documentation of code and functionality at project hand over.
-This document should have two parts:
+This document shall have two parts:
 
 1. User Instructions
 2. Technical Documentation
