@@ -19,6 +19,7 @@
 | 1.4 | 26.10.2025 | Julian Schumacher | add user groups |
 | 1.5 | 26.10.2025 | Julian Schumacher | update document structure and contents according to DIN 69901-5 |
 | 1.6 | 26.10.2025 | Julian Schumacher | fix typos |
+| 1.7 | 26.10.2025 | Julian Schumacher | fix last typos and inconsistencies |
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
@@ -229,7 +230,7 @@ Known risks include possible incompatibilities between BaSyx server versions, de
 
 The development process will follow an iterative and incremental model. The initial phase includes a detailed analysis of the current code base, setup of local BaSyx and AAS environments, and validation of the existing product catalog features. Subsequent iterations will introduce refinements in configuration management, data loading, and UI design. Each iteration will be tested against the acceptance criteria defined in this document.
 
-The system architecture is divided into three layers. The presentation layer consists of the web frontend implemented in TypeScript and Vue, responsible for rendering views and handling user interaction. The application logic layer manages state, coordinates API requests, and applies filters or sorting logic. The data access layer communicates with AAS repositories through REST APIs and translates JSON responses into domain objects understood by the frontend. This architecture ensures a clear separation of concerns and enables parallel development of UI and data integration components.
+The system architecture is divided into three layers. The presentation layer consists of the web frontend implemented in TypeScript and React, responsible for rendering views and handling user interaction. The application logic layer manages state, coordinates API requests, and applies filters or sorting logic. The data access layer communicates with AAS repositories through REST APIs and translates JSON responses into domain objects understood by the frontend. This architecture ensures a clear separation of concerns and enables parallel development of UI and data integration components.
 
 Continuous integration pipelines will automate building and testing. Code reviews and version control via GitHub will ensure traceability of changes and maintain code quality. User feedback will be incorporated through iterative evaluation sessions with students and supervisors.
 
