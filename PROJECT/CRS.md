@@ -40,11 +40,9 @@
 
 ## 1. Introduction
 
-The purpose of this document is to describe the customer requirements for the enhancement of the *Eclipse Mnestix Product Catalog Viewer*, an open-source component within the Eclipse ecosystem that provides visualization and interaction capabilities for Asset Administration Shells (AAS). This document serves as a Customer Requirements Specification, written in accordance with the German standard **DIN 69901** for project management. It formulates the expectations, goals, and framework conditions from the customer’s perspective without prescribing technical implementation details.
+The purpose of this document is to describe the customer requirements for the enhancement of the *Eclipse Mnestix Product Catalog Viewer* - as specified [here](https://github.com/DHBW-TINF24F/.github/blob/main/project5_mnestix_product_catalogue.md) on GitHub -, an open-source component within the Eclipse ecosystem that provides visualization and interaction capabilities for Asset Administration Shells (AAS). This document serves as a Customer Requirements Specification, written in accordance with the German standard **DIN 69901** for project management. It formulates the expectations, goals, and framework conditions from the customer’s perspective without prescribing technical implementation details.
 
-The overarching aim of this project is to improve usability, configurability, performance, and functionality of the existing **Eclipse Mnestix Product Catalog Viewer**, aligning it with modern usability standards while maintaining full compatibility with the AAS v3 model and BaSyx infrastructure. The viewer will ultimately serve as a reference implementation for educational and industrial applications within the context of Industry 4.0, enabling users to explore digital representations of physical products, components, and systems in an intuitive and efficient manner.
-
-This project document is part of the DHBW Software Engineering curriculum, and will be used to further specify other files and project management artifacts. The document at hand lays the conceptual and functional foundation for all subsequent phases of development.
+The project aims to improve usability, configurability, performance, and functionality of the existing viewer while maintaining full compatibility with AAS v3 and BaSyx. The viewer will ultimately serve as a reference implementation for educational and industrial applications within the context of Industry 4.0, enabling users to explore digital representations of physical products, components, and systems in an intuitive and efficient manner.
 
 ---
 
@@ -52,7 +50,7 @@ This project document is part of the DHBW Software Engineering curriculum, and w
 
 <img width="2255" height="1802" alt="image" src="https://github.com/user-attachments/assets/a5380bd2-57de-4750-9e6e-5053cc0f5005" />
 
-The current version of the Eclipse Mnestix Product Catalog Viewer is functional but limited in usability and scalability. It provides a technical interface for accessing and displaying AAS repositories, which are digital twins of industrial assets, but its user experience is largely designed for engineers familiar with AAS structures rather than end users or integrators. The existing UI exposes multiple repositories and allows users to browse submodels and properties; however, it lacks intuitive navigation, consistent visual feedback, and several basic conveniences expected in contemporary web applications.
+The current Mnestix Product Catalog Viewer is functional but limited in usability and scalability. While it can access and display AAS repositories, it targets engineers rather than general users and lacks intuitive navigation, visual feedback, and responsiveness.
 
 The configuration dialog offers only minimal control over repositories. Users cannot enable or disable specific AAS sources dynamically, nor can they inspect Concept Description (CD) repositories in a meaningful way. Repository data is loaded synchronously, resulting in blocking user interfaces and poor responsiveness when large datasets or slow servers are involved. The login status is not persistently visible, which can lead to confusion about authentication states, especially when interacting with multiple back-end servers.
 
@@ -83,10 +81,9 @@ In the configuration view, users will be able to add, remove, and manage AAS rep
 
 The catalog view shall display all connected repositories together with a visible count of contained product entries. This gives immediate feedback on repository content and data availability. The product list will implement non-blocking, asynchronous loading mechanisms to ensure that data retrieval never freezes the UI. The viewer will display only AAS instances whose AssetKind is “Type”, while those marked “NotApplicable” will be excluded to maintain relevance. Sorting and filtering operations will be available through query parameters and on-screen controls, enabling users to organize product data by manufacturer, product designation, or order code. Thumbnail images will be loaded on demand for visible items only, reducing unnecessary bandwidth consumption and improving performance on slow connections or devices.
 
-The product detail view will integrate the external **Nameplate Generator** (as specified on GitHub [here](https://github.com/ttrsf/TINF22F-Team2-Nameplate-Generator)) to allow the creation of standardized digital nameplates directly from an AAS instance, in order to comply with future standards of industry 4.0 environments. The digital product passport and it's technical data was defined in the DIN SPEC 91406 and its international further development IEC 61406 as well as the VDE V 0170-100 as pre-standard for the international IEC 63365 standard. These standards are respected in the specified Nameplate Generator, which is the reason for its integration in this project. Furthermore, it will display structured submodels for Technical Data, Bill of Material (BOM), and Handover Documentation in a consistent and readable format. The BOM section will provide interactive links to related AAS entries, thereby supporting the exploration of hierarchical product structures. Finally, an additional eShop module will allow actions such as “Add to Cart” and “Show Cart”, preparing the foundation for transactional extensions in later project phases and providing a more consistent and familiar user experience.
+The product detail view will integrate the external **Nameplate Generator** (as specified on GitHub [here](https://github.com/ttrsf/TINF22F-Team2-Nameplate-Generator)) to allow the creation of standardized digital nameplates directly from an AAS instance, in order to comply with future standards of industry 4.0 environments. The Nameplate Generator integration ensures compliance with relevant DIN and IEC standards for digital product passports. Furthermore, it will display structured submodels for Technical Data, Bill of Material (BOM), and Handover Documentation in a consistent and readable format. The BOM section will provide interactive links to related AAS entries, thereby supporting the exploration of hierarchical product structures. Finally, an additional eShop module will allow actions such as “Add to Cart” and “Show Cart”, preparing the foundation for transactional extensions in later project phases and providing a more consistent and familiar user experience.
 
-The new system will maintain compatibility with BaSyx runtime environments and existing AAS servers while improving stability and user experience. It will serve as a demonstrator that bridges the gap between industrial semantics and real-world usability.
-Focus of this project are improvements in usability, performance, and functional completeness in order to appeal to non-technical users.
+The system remains compatible with BaSyx and existing AAS servers while improving stability and usability. It will serve as a demonstrator that bridges the gap between industrial semantics and real-world usability.
 
 ---
 
@@ -120,7 +117,10 @@ The user interface must follow modern design principles of clarity, consistency,
 
 ### 6.2 Reliability
 
-The application must maintain stable operation under varying network conditions. It shall handle network timeouts, invalid responses, and unavailable repositories without causing crashes or data loss. A mechanism for graceful degradation shall ensure that essential functions remain operational even when some data sources are offline. Session management must be robust, preserving login state until explicit logout or session timeout. Any unexpected behavior must be logged for later analysis.
+
+
+
+The system must remain stable under varying network conditions. It shall handle network timeouts, invalid responses, and unavailable repositories without causing crashes or data loss. A mechanism for graceful degradation shall ensure that essential functions remain operational even when some data sources are offline. Session management must be robust, preserving login state until explicit logout or session timeout. Any unexpected behavior must be logged for later analysis.
 
 ### 6.3 Efficiency
 
@@ -137,7 +137,8 @@ The application must run on all major desktop operating systems through standard
 
 ### 6.6 Maintainability
 
-The project must include adequate documentation covering architecture, setup, and usage. Automated tests for key functions shall verify system stability where possible. The build process should be reproducible and automated through scripts or continuous integration tools. Configuration files must be readable and adjustable without manual code modifications.
+As an open-source project, the system must be modular, well-documented, and easy to extend.
+The project must include adequate documentation covering architecture, setup, and usage. Automated tests for key functions shall verify system stability where possible.
 
 ### 6.7 Risk Acceptance
 
@@ -163,7 +164,7 @@ The final delivery will include the enhanced Mnestix Product Catalog Viewer sour
 
 ## 9. Acceptance Criteria
 
-The system will be accepted if it meets the functional and non-functional requirements described in this document. Specifically, the login status must be visible at all times, data loading must be non-blocking, repositories must be configurable dynamically, and filtering and sorting must operate reliably for all listed fields. The integration of the Nameplate Generator and eShop features must be fully functional and stable, even though the eShop can perform mock actions. The improved visualization of submodels must display data consistently and without formatting errors. Performance benchmarks must confirm that the system responds within the defined time constraints. Only when these criteria are met will the system be considered ready for final review and contribution to the Eclipse Mnestix project.
+The system will be accepted if it meets all functional and non-functional requirements, including visible login status, dynamic configuration, stable Nameplate Generator integration, and responsive data handling. Performance benchmarks must confirm that the system responds within the defined time constraints. Only when these criteria are met will the system be considered ready for final review and contribution to the Eclipse Mnestix project.
 
 ## 9.1. Acceptance Test Cases
 
