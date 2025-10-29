@@ -1,9 +1,9 @@
 # Customer Requirements Specification (CRS)
 
 ## Project: Eclipse Mnestix Product Catalog
-**Version:** 1.8  
-**Author:** Julian Schumacher  
-**Date:** 26.10.2025  
+**Version:** 1.9
+**Author:** Julian Schumacher
+**Date:** 26.10.2025
 **Institution:** DHBW Stuttgart
 
 ---
@@ -22,6 +22,7 @@
 | 1.6 | 26.10.2025 | Julian Schumacher | fix typos |
 | 1.7 | 26.10.2025 | Julian Schumacher | fix last typos and inconsistencies |
 | 1.8 | 27.10.2025 | Julian Schumacher | update structure and contents to reduce redundancy and remove contents, placed in other project management documents |
+| 1.9 | 29.10.2025 | Julian Schumacher | update requirements and improve clarity |
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
@@ -55,7 +56,7 @@ The current version of the Eclipse Mnestix Product Catalog Viewer is functional 
 
 The configuration dialog offers only minimal control over repositories. Users cannot enable or disable specific AAS sources dynamically, nor can they inspect Concept Description (CD) repositories in a meaningful way. Repository data is loaded synchronously, resulting in blocking user interfaces and poor responsiveness when large datasets or slow servers are involved. The login status is not persistently visible, which can lead to confusion about authentication states, especially when interacting with multiple back-end servers.
 
-In the product list, assets of all kinds are shown without distinction between actual product types and auxiliary entries. This results in cluttered views that reduce usability. Sorting and filtering options are either limited or unavailable. Moreover, the display of images and submodel data is inefficient, as all assets are loaded at once, including non-visible thumbnails. The presentation of technical data and documentation submodels is inconsistent and visually unstructured.  
+In the product list, assets of all kinds are shown without distinction between actual product types and auxiliary entries. This results in cluttered views that reduce usability. Sorting and filtering options are either limited or unavailable. Moreover, the display of images and submodel data is inefficient, as all assets are loaded at once, including non-visible thumbnails. The presentation of technical data and documentation submodels is inconsistent and visually unstructured.
 
 These limitations hinder the viewer’s effectiveness as a user-friendly product catalog for industrial use cases and educational demonstrations. While the system successfully connects to BaSyx servers and fetches AAS data, its interaction design and performance characteristics do not yet reflect the standards expected from a digital twin browser in a modern Industry 4.0 context.
 
@@ -91,80 +92,21 @@ Focus of this project are improvements in usability, performance, and functional
 
 ## 5. Functional Requirements
 
-| Requirement ID | Short Description |
-|----------------|--------------|
-| FR-001 | The system shall display the user login status permanently in the header section. |
-| FR-02 | The configuration view shall allow users to add, modify, or disable repositories dynamically. |
-| FR-03 | The configuration view shall allow users to view Concept Description entries from connected repositories. |
-| FR-04 | The catalog selection view shall display the number of product entries available in each repository. |
-| FR-05 | The product list view shall retrieve AAS data asynchronously to avoid blocking the interface. |
-| FR-06 | The product list shall view the attributes ManfacturerName, ProductDesignation, OrderCode, ManufacturerCode, globalAssetId and createdAt. |
-| FR-07 | The product list view shall filter AAS entries based on the AssetKind attribute, displaying only those classified as Type. |
-| FR-08 | The product list view shall support sorting and filtering by manufacturer name, product designation, order code, manufacturer code, global asset identifier, and creation timestamp. |
-| FR-09 | The product list view shall load thumbnails and other media content lazily, restricted to visible items on screen. |
-| FR-10 | The product detail view shall integrate the Nameplate Generator as an interactive option within the context menu. |
-| FR-11 | The Bill of Material submodel shall allow users to navigate to linked AAS entries through interactive elements. |
-| FR-12 | The Technical Data and Handover Documentation submodels shall be presented in a structured layout with consistent column widths, readable formatting, and clear section labels. |
-| FR-13 | An additional eShop extension shall enable basic shopping cart operations, including adding items to the cart and viewing the cart contents. |
-
-### FR-01
-The enhanced Mnestix Viewer must enable continuous visualization of the login status in the header section, providing immediate user feedback on authentication and a clear login status indicator throughout the whole session.
-
-### FR-02
-In the configuration view, users must be able to add, modify, or disable repositories dynamically and view Concept Description entries. Repository information, including URLs and metadata, must be validated and persisted for later sessions through local storage.
-If a user is logged in, configuration shall be removed from local storage on logout to prevent unauthorized access to possible personal data.
-
-### FR-03
-In the configuration view, users shall be able to inspect Concept Description entries from connected repositories. 
-
-### FR-04
-In the catalog selection view, the system shall show the number of product entries available in each repository to provide users with immediate feedback on repository content and data availability.
-
-### FR-05
-The product list view shall retrieve AAS data asynchronously to avoid blocking the interface and saving data and performance on mobile network or devices.
-
-### FR-06
-The product list shall view the following attributes for each AAS entry:
-
-- ManufacturerName
-- ProductDesignation
-- OrderCode
-- ManufacturerCode
-- GlobalAssetId
-- CreationDate (named createdAt)
-
-### FR-07
-The system must filter AAS entries based on the AssetKind attribute, displaying only those classified as Type.
-Specifically, AssetType of "Type" shall be included, while "NotApplicable" entries shall be excluded from the product list by default to provide a more relevant and focused view of actual products.
-
-### FR-08
-Sorting and filtering must be possible by the following attributes:
-
-- manufacturer name,
-- product designation,
-- order code,
-- manufacturer code,
-- global asset identifier,
-- creation timestamp
-
-These operations must apply both through URL parameters and graphical controls.
-This links to [FR-06](#fr-06) which defines the attributes to be displayed.
-
-### FR-09
-Thumbnails and other media content should be loaded lazily, restricted to visible items on screen in order to save data and improve performance on mobile networks or devices.
-
-### FR-10
-In the product detail view, the system shall integrate the Nameplate Generator as an interactive option within the context menu in order to provide users with direct access to standardized digital nameplate generation for their products.
-
-### FR-11
-The Bill of Material submodel must allow users to navigate to linked AAS entries through interactive elements to quickly scan over related components and their digital representations.
-
-### FR-12
-Technical Data and Handover Documentation must be presented in a structured layout with consistent column widths, readable formatting, and clear section labels to provide users with a clear and organized view of essential product information.
-
-### FR-13
-An additional eShop extension shall enable basic shopping cart operations, though transactions will remain simulated in the scope of this project.
-This functions include "addToCart" and "showCart", as well as related operations such as removing items from the cart.
+| Requirement ID | Short Description | Details |
+|----------------|------------------|---------|
+| FR-001 | The system shall display the user login status permanently in the header section. | Provides immediate authentication feedback and maintains a visible login indicator throughout the session. |
+| FR-002 | The configuration view shall allow users to add, modify, or disable repositories dynamically. | Repository data must be validated and persisted in local storage. If the user logs out, the configuration is cleared to protect personal data. |
+| FR-003 | The configuration view shall allow users to view Concept Description entries from connected repositories. | Enables inspection of Concept Description entries within linked repositories. |
+| FR-004 | The catalog selection view shall display the number of product entries available in each repository. | Shows repository content counts to indicate data availability. |
+| FR-005 | The product list view shall retrieve AAS data asynchronously to avoid blocking the interface. | Ensures a non-blocking interface and optimized performance, especially on mobile networks. |
+| FR-006 | The product list shall view the attributes ManufacturerName, ProductDesignation, OrderCode, ManufacturerCode, globalAssetId and createdAt. | Displays these core attributes for each AAS entry. |
+| FR-007 | The product list view shall filter AAS entries based on the AssetKind attribute, displaying only those classified as Type. | Excludes entries with AssetKind “NotApplicable” to focus on valid product types. |
+| FR-008 | The product list view shall support sorting and filtering by manufacturer name, product designation, order code, manufacturer code, global asset identifier, and creation timestamp. | Sorting and filtering must work via both URL parameters and graphical controls, referencing the displayed attributes from FR-006. |
+| FR-009 | The product list view shall load thumbnails and other media content lazily, restricted to visible items on screen. | Loads only visible media elements to conserve data and improve performance. |
+| FR-010 | The product detail view shall integrate the Nameplate Generator as an interactive option within the context menu. | Provides direct access to standardized digital nameplate generation. |
+| FR-011 | The Bill of Material submodel shall allow users to navigate to linked AAS entries through interactive elements. | Enables quick navigation between related digital components. |
+| FR-012 | The Technical Data and Handover Documentation submodels shall be presented in a structured layout with consistent column widths, readable formatting, and clear section labels. | Ensures a consistent and organized display of technical and documentation data. |
+| FR-013 | An additional eShop extension shall enable basic shopping cart operations, including adding items to the cart and viewing the cart contents. | Supports simulated cart functions such as addToCart, showCart, and removeFromCart. |
 
 ---
 
@@ -206,9 +148,9 @@ Known risks include possible incompatibilities between BaSyx server versions, de
 ## 7. Constraints and Assumptions
 
 ### 7.1 Constraints
-- The system must remain open-source under the **Eclipse Public License (EPL)**.  
-- All developments must align with the **Eclipse Mnestix architecture**.  
-- Dependencies must be compatible with **modern browsers (Chrome, Firefox, Edge)**.  
+- The system must remain open-source under the **Eclipse Public License (EPL)**.
+- All developments must align with the **Eclipse Mnestix architecture**.
+- Dependencies must be compatible with **modern browsers (Chrome, Firefox, Edge)**.
 - Development shall use the existing **Node.js + React** technology stack.
 
 ---
@@ -258,10 +200,9 @@ This Customer Requirements Specification defines the expectations and quality cr
 ---
 
 ## 12. References
-1. [Eclipse Mnestix Project](https://github.com/eclipse-mnestix/mnestix-browser)  
+1. [Eclipse Mnestix Project](https://github.com/eclipse-mnestix/mnestix-browser)
 2. [Project Specification](https://github.com/DHBW-TINF24F/.github/blob/main/project5_mnestix_product_catalogue.md)
-3. [AASX Package Explorer](https://github.com/eclipse-aaspe/package-explorer)  
-4. [Eclipse BaSyx](https://basyx.org/get-started/introduction)  
-5. [IDTA Specifications](https://industrialdigitaltwin.org/content-hub/downloads)  
+3. [AASX Package Explorer](https://github.com/eclipse-aaspe/package-explorer)
+4. [Eclipse BaSyx](https://basyx.org/get-started/introduction)
+5. [IDTA Specifications](https://industrialdigitaltwin.org/content-hub/downloads)
 6. [Nameplate Generator Project](https://github.com/ttrsf/TINF22F-Team2-Nameplate-Generator)
-
