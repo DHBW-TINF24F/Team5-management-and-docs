@@ -1,6 +1,6 @@
 # Software Requirements Specification
 
-Revision history: This SRS is tracked with Git.
+**Revision history:** This SRS is tracked with Git.
 See the commit history on [GitHub](https://github.com/DHBW-TINF24F/Team5-management-and-docs/commits/).
 
 This Software Requirements Specification (SRS) specifies the work of group 5.
@@ -13,6 +13,29 @@ The software and this specification was developed in connection with a universit
 > Read the [IEEE Guide to Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=278253) or [IEEE Recommended Practice for Software Requirements Specifications](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=720574) before contributing to the SRS.
 
 ## Table of Contents
+
+1. [Introduction](#introduction)  
+    1.1. [Purpose](#purpose)  
+    1.2. [Definitions and Acronyms](#definitions-and-acronyms)  
+    1.3. [Scope](#scope)  
+    1.4. [References](#references)  
+    1.5. [Overview](#overview)  
+2. [Overall Description](#overall-description)  
+    2.1. [Product Perspective](#product-perspective)  
+        2.1.1. [System interfaces](#system-interfaces)  
+        2.1.2. [User Interfaces](#user-interfaces)  
+        2.1.3. [Operations](#operations)  
+    2.2. [Product Functions](#product-functions)  
+    2.3. [User Characteristics](#user-characteristics)  
+    2.4. [Limitations](#limitations)  
+    2.5. [Assumptions and dependencies](#assumptions-and-dependencies)  
+3. [Specific features](#specific-features)  
+    3.1. [Non-Functional Requirements](#non-functional-requirements-nfr)  
+    3.2. [External interface requirements](#external-interface-requirements)  
+        3.2.1. [Availability](#availability)  
+        3.2.2. [Security and privacy](#security-and-privacy)  
+        3.2.3. [Maintainability](#maintainability)  
+4. [Verfication](#verification)
 
 ## Introduction
 
@@ -119,6 +142,54 @@ These changes follow Mnestix’s existing design principles.
 All affected elements are configurable and/or selectable by the user.
 
 Following wireframes for all UI related requirements listed in [Specific Requirements](#specific-requirements).
+
+![](/PROJECT/assets/srs/fr.001.svg)
+
+_FR.001: Login information in the upper right corner_
+
+![](/PROJECT/assets/srs/fr.003.svg)
+
+_FR.003: Information about content of repository_
+
+![](/PROJECT/assets/srs/fr.004.svg)
+
+_FR.004: Nameplate Generator implementation in AAS viewer_
+
+![](/PROJECT/assets/srs/fr.005.svg)
+
+_FR.005: New columns in AAS List._
+
+![](/PROJECT/assets/srs/fr.006.svg)
+
+_FR.006: AAS list filterable with input query._
+
+![](/PROJECT/assets/srs/fr.008.svg)
+
+_FR.008: Cart view is accessable from the sidebar._
+
+![](/PROJECT/assets/srs/fr.009.svg)
+
+_FR.009: All AAS in cart are visible in shopping cart._
+
+![](/PROJECT/assets/srs/fr.010.svg)
+
+_FR.010: The quantity of AAS in shpping cart is changeable._
+
+![](/PROJECT/assets/srs/fr.011.svg)
+
+_FR.011: `Add to Cart` button in every AAS view._
+
+![](/PROJECT/assets/srs/fr.012.svg)
+
+_FR.012: Number of AAS in cart is visible in side bar._
+
+![](/PROJECT/assets/srs/fr.015.svg)
+
+_FR.015: Price per unit is shown underneath the `Add to cart` button._
+
+![](/PROJECT/assets/srs/fr.016.svg)
+
+_FR.016: User can disable and enable repositories in settings._
 
 #### Operations
 
