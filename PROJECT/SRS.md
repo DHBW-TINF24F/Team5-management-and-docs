@@ -306,8 +306,6 @@ Verification methods:
 | **FR.020** | The system should improve the formatting of the `HandoverDocumentation` submodel for better readability. | Optional | Increases usability for document-related submodels. | Inspection |
 | **FR.021** | The system should allow navigation through linked AAS references within submodel visualizations. | Optional | Enables seamless exploration of linked AAS data. | Demonstration |
 
-UNGENAUIGKEIT BEI Im Konfigurationsdialog sollen die Einstelloptionen verfeinert werden: CD-Repositories sollen konfiguriert werden können, Es soll eine inhaltliche Anzeige des/der CD-Repositories möglich sein., Die Anzeige des SM TechnicalData soll benutzerfreundlicher erfolgen.
-
 ### Non-Functional Requirements (NFR)
 
 | ID | Requirement Description | Category | Rationale | Verification Method |
