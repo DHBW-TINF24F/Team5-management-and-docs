@@ -11,18 +11,7 @@
 ## Document Version History
 | Version | Date | Author | Change-description |
 |----------|------|---------|-------------|
-| 0.8 | 25.09.2025 | Julian Schumacher | Initial Draft |
-| 0.9 | 10.10.2025 | Julian Schumacher | improved requirements and project background |
-| 1.0 | 18.10.2025 | Julian Schumacher | Initial Version |
-| 1.1 | 24.10.2025 | Julian Schumacher | Update structure and navigation |
-| 1.2 | 24.10.2025 | Julian Schumacher | restructure requirements |
-| 1.3 | 25.10.2025 | Julian Schumacher | update requirements and remove system architecture |
-| 1.4 | 26.10.2025 | Julian Schumacher | add user groups |
-| 1.5 | 26.10.2025 | Julian Schumacher | update document structure and contents according to DIN 69901-5 |
-| 1.6 | 26.10.2025 | Julian Schumacher | fix typos |
-| 1.7 | 26.10.2025 | Julian Schumacher | fix last typos and inconsistencies |
-| 1.8 | 27.10.2025 | Julian Schumacher | update structure and contents to reduce redundancy and remove contents, placed in other project management documents |
-| 1.9 | 29.10.2025 | Julian Schumacher | update requirements and improve clarity |
+| 1.0 | 05.11.2025 | Julian Schumacher | Initial Version |
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
@@ -92,18 +81,29 @@ The system remains compatible with BaSyx and existing AAS servers while improvin
 | Requirement ID | Short Description | Details |
 |----------------|------------------|---------|
 | FR-001 | The system shall display the user login status permanently in the header section. | Provides immediate authentication feedback and maintains a visible login indicator throughout the session. |
-| FR-002 | The configuration view shall allow users to add, modify, or disable repositories dynamically. | Repository data must be validated and persisted in local storage. If the user logs out, the configuration is cleared to protect personal data. |
-| FR-003 | The configuration view shall allow users to view Concept Description entries from connected repositories. | Enables inspection of Concept Description entries within linked repositories. |
-| FR-004 | The catalog selection view shall display the number of product entries available in each repository. | Shows repository content counts to indicate data availability. |
-| FR-005 | The product list view shall retrieve AAS data asynchronously to avoid blocking the interface. | Ensures a non-blocking interface and optimized performance, especially on mobile networks. |
-| FR-006 | The product list shall view the attributes ManufacturerName, ProductDesignation, OrderCode, ManufacturerCode, globalAssetId and createdAt. | Displays these core attributes for each AAS entry. |
-| FR-007 | The product list view shall filter AAS entries based on the AssetKind attribute, displaying only those classified as Type. | Excludes entries with AssetKind “NotApplicable” to focus on valid product types. |
-| FR-008 | The product list view shall support sorting and filtering by manufacturer name, product designation, order code, manufacturer code, global asset identifier, and creation timestamp. | Sorting and filtering must work via both URL parameters and graphical controls, referencing the displayed attributes from FR-006. |
-| FR-009 | The product list view shall load thumbnails and other media content lazily, restricted to visible items on screen. | Loads only visible media elements to conserve data and improve performance. |
-| FR-010 | The product detail view shall integrate the Nameplate Generator as an interactive option within the context menu. | Provides direct access to standardized digital nameplate generation. |
-| FR-011 | The Bill of Material submodel shall allow users to navigate to linked AAS entries through interactive elements. | Enables quick navigation between related digital components. |
-| FR-012 | The Technical Data and Handover Documentation submodels shall be presented in a structured layout with consistent column widths, readable formatting, and clear section labels. | Ensures a consistent and organized display of technical and documentation data. |
-| FR-013 | An additional eShop extension shall enable basic shopping cart operations, including adding items to the cart and viewing the cart contents. | Supports simulated cart functions such as addToCart, showCart, and removeFromCart. |
+| FR-002 | The new login button shall take over all the features of the existing login button | All features, including menus, error handling etc. shall be preserved. |
+| FR-003 | The number of AAS entries per repository shall be displayed | in the repository overview, there shall be a number indicating the count of AAS entries available in each repository. |
+| FR-004 | The Nameplate Generator shall be integrated into the product detail view | The Nameplate Generator shall be accessible via the context menu in the product detail view, using the fiven implementation repository, which can be found [here](https://github.com/ttrsf/TINF22F-Team2-Nameplate-Generator) |
+| FR-005 | The system shall display multiple columns in the AAS list | for better overview and usability, the AAS list shall display multiple columns, including ManufacturerName, ProductDesignation, OrderCode, ManufacturerCode, globalAssetId and createdAt. |
+| FR-006 | The system shall allow users to filter the AAS list based on query parameters | The AAS list shall support filtering based on the attributes ManufacturerName, ProductDesignation, OrderCode, ManufacturerCode, globalAssetId and createdAt via URL parameters. |
+| FR-007 | The system shall allow users to sort the AAS list by any available column | The AAS list shall support sorting based on the attributes ManufacturerName, ProductDesignation, OrderCode, ManufacturerCode, globalAssetId and createdAt via columns or query parameters as specified in FR-005. |
+| FR-008 | The system shall provide a cart view | For the extended eShop funtionality, the system shall provide a cart view accesible via the sidebar or via url with the path /cart. |
+| FR-009 | The system shall list all products added to the cart in the cart view | The cart view shall list all products added to the cart, displaying at least the ManufacturerName, ProductDesignation and OrderCode of each product. |
+| FR-010 | product quantities should be editable in the cart | The system shall provide the user with the option to modify the quantity of each product in the cart. |
+| FR-011 | The system shall provide the option to add products to the cart | In the product detail view, the system shall provide an "Add to Cart" button that allows users to add the currently viewed product to their cart. |
+| FR-012 | The sidebar shall indicate the total number of products in the cart | The sidebar shall display a cart icon with a badge or number indicating the total number of products currently in the cart. |
+| FR-013 | The eShop System shall be disableable via configuration | The eShop functionality shall be optional and can be enabled or disabled via the `.env` file with the flag `SHOP_ENABLED_FLAG`. |
+| FR-014 | The system shall support integration with an external payment gateway | The eShop system shall be designed to allow future integration with external payment gateways for processing transactions. |
+| FR-015 | The system shall display product prices | In the product overview there shall be a price attribute displayed for each product, which is also reflected in the cart view, if the eShop module is active. |
+| FR-016 | The system shall allow users to enable or disable individual AAS repositories | Users shall be able to enable or disable specific AAS repositories through the configuration view without removing them entirely. |
+| FR-017 | The system shall allow users to enable or disable individual CD repositories | Users shall be able to enable or disable specific CD repositories through the configuration view without removing them entirely. |
+| FR-018 | Users shall be able to inspect the content of CD repositories | The system shall allow users to view the content of CD repositories through the user interface. |
+| FR-019 | The `SMTechnicalData` formatting shall be improved | The `SMTechnicalData` submodel shall be presented in a structured layout with consistent column widths, readable formatting, and clear section labels for better readability. |
+| FR-020 | The `SMHandoverDocumentation` formatting shall be improved | The `SMHandoverDocumentation` submodel shall be presented in a structured layout with consistent column widths, readable formatting, and clear section labels for better readability. |
+| FR-021 | Navigating through linked AAS references should be possible (Bill of material) | The system shall allow navigation through linked AAS references within submodel visualizations. |
+| FR-022 | The product list view shall retrieve AAS data asynchronously to avoid blocking the interface. | Ensures a non-blocking interface and optimized performance, especially on mobile networks. |
+| FR-023 | The product list view shall load thumbnails and other media content lazily, restricted to visible items on screen. | Loads only visible media elements to conserve data and improve performance. |
+
 
 ---
 
@@ -116,9 +116,6 @@ The non-functional requirements define qualitative aspects that determine the ov
 The user interface must follow modern design principles of clarity, consistency, and intuitive interaction. Navigation elements shall be uniformly placed and labeled. Error messages must be understandable to non-technical users and provided in the same language the system is provided in. Visual feedback should indicate ongoing loading operations and completed actions. All user-flows - from repository configuration to product inspection - must be accomplishable with minimal clicks and without manual page reloads. Color schemes should ensure sufficient contrast and readability in both light and dark modes.
 
 ### 6.2 Reliability
-
-
-
 
 The system must remain stable under varying network conditions. It shall handle network timeouts, invalid responses, and unavailable repositories without causing crashes or data loss. A mechanism for graceful degradation shall ensure that essential functions remain operational even when some data sources are offline. Session management must be robust, preserving login state until explicit logout or session timeout. Any unexpected behavior must be logged for later analysis.
 
