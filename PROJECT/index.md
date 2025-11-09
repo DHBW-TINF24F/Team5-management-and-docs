@@ -3,5 +3,6 @@
 This directory contains project management files.
 Available files:
 
-* [Software Requirements Specification (Gregor Gottschewski)](/PROJECT/software-requirements-specification.md)
 * [Customer Requirements Specification (Julian Schumacher)](/PROJECT/CRS.md)
+* [Software Architecture Specification (Bruno Lange)](/PROJECT/software-architecture-specification.md)
+* [Software Requirements Specification (Gregor Gottschewski)](/PROJECT/software-requirements-specification.md)
