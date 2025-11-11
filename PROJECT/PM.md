@@ -8,7 +8,8 @@
 |:--------:|:-----------:|:---------------:|:---------------------------------------------|
 | 1.0 | 24.10.2025 | Felix Hennerich | Initialize document and structure|
 | 1.1 | 31.10.2025 | Felix Hennerich | Project Init, Organisation Model, Risk Assessment, Gantt|
-| 1.2 | 10.11.2025 | Felix Hennerich | Milestones and Deadlines, DoD
+| 1.2 | 10.11.2025 | Felix Hennerich | Milestones and Deadlines, DoD |
+| 1.3 | 11.11.2025 | Felix Hennerich | Added Implementation Phase chapter |
 
 ## Contents
 - [Project Initialisation](#project-init)
@@ -16,6 +17,7 @@
 - [Milestones and Deadlines](#mile-dead)
 - [Risk Management](#risk)
 - [Gantt Chart](#gantt)
+- [Implementation Phase](#implementation)
 - [Definition of Done](#dod)
 
 <a id="project-init"></a>
@@ -280,6 +282,52 @@ gantt
     Final Presentation              :e4, 2026-05-20, 2026-05-22
     Project Handover                :e5, 2026-05-22, 2026-05-22
 ```
+---
+
+<a id="implementation"></a>
+## Implementation Phase
+
+Objectives
+- Deliver tested, shippable increments aligned with milestones and the Definition of Done.
+
+Preparation
+- Approved design/SRS baselines; prioritized backlog with clear acceptance criteria.
+- Ready environments, CI/CD, coding standards, and PR templates.
+
+Process
+- Iterations: 1–2 weeks; slice work into small, testable tasks.
+- Branching & PRs: small feature branches, protected main; link issues; fast reviews.
+- Quality: linters, static analysis, code review; feature flags for safe rollout.
+- Collaboration: pair/mob for complex items; reuse components.
+
+Task Workflow
+1) Plan
+2) Build
+3) Verify
+4) Review
+5) Integrate
+6) Stage
+
+### Task Workflow Diagram
+```mermaid
+%%{init: { 'themeVariables': { 'fontSize': '18px' }, 'flowchart': { 'nodeSpacing': 60, 'rankSpacing': 70 } } }%%
+flowchart LR
+    A[Plan\nRefine story & DoD] --> B[Build\nImplement + tests]
+    B --> C[Unit & integration checks]
+    C --> D[Review]
+    D --> E[Integrate CI]
+    E --> F[Deploy]
+    F --> G{Meets Exit Criteria?}
+    G -->|No| A
+    G -->|Yes| H[Accepted]
+```
+
+Testing
+- Unit on critical modules; integration/API contracts; focused E2E for key flows; basic performance/security scans.
+
+Exit Criteria
+- Acceptance criteria met; tests pass; reviewed & merged; docs updated; staged successfully; rollback/flag ready.
+
 ---
 
 <a id="dod"></a>
