@@ -61,7 +61,7 @@ Due to the Test presentation, the next weekly meeting will not be held. So the n
 | No. | Topic                     | Responsibility | Time (min) |
 |-----|----------------------------|----------------|-------------|
 | 1   | ReadME file      | All            | 5          |
-| 2   | Outline Presenation | All           | 15          |
+| 2   | Outline Presentation | All           | 15          |
 
 **Location:** DHBW Stuttgart
 **Date:** 27.10.2025  
