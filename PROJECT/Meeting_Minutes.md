@@ -13,12 +13,12 @@
 | 1.4 | 24.10.2025 | Felix Hennerich | Versions at the top |
 | 1.5 | 24.10.2025 | Felix Hennerich | Presentation and Code Discussion |
 | 1.6 | 27.10.2025 | Felix Hennerich | Meeting with external |
-| 1.7 | 31.10.2025 | Felix Hennerich | Further Excersies |
+| 1.7 | 31.10.2025 | Felix Hennerich | Further Exercises |
 | 1.8 | 07.11.2025 | Felix Hennerich | Preparation of Pre-presentation |
 
 ## Table of Contents
 - [Meeting 07.11.2025 - Preparation of Pre-presentation](#prepres)
-- [Meeting 31.10.2025 - ReadME, Further Excersies](#readme)
+- [Meeting 31.10.2025 - ReadME, Further Exercises](#readme)
 - [Meeting 27.10.2025 - External Meeting](#external)
 - [Meeting 24.10.2025 - Presentation and Code Discussion](#presentation)
 - [Meeting 17.10.2025 - Business Case](#bc)
