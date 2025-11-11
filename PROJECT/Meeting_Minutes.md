@@ -56,7 +56,7 @@ Due to the Test presentation, the next weekly meeting will not be held. So the n
 
 ---
 
-<a id="presentation"></a>
+<a id="readme"></a>
 ## Meeting 31.10.2025 - External Meeting
 | No. | Topic                     | Responsibility | Time (min) |
 |-----|----------------------------|----------------|-------------|
