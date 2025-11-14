@@ -15,7 +15,6 @@
 | 1.3 | 14.10.2025 | Nils Schäffner | Add Gantt diagram and risk analysis |
 | 1.4 | 15.10.2025 | Nils Schäffner | Add cost and price calculation |
 | 1.5 | 24.10.2025 | Nils Schäffner | Applied review suggestions and relocated the BC to PROJECT |
-| 1.6 | 14.11.2025 | Nils Schäffner | Final changes |
 
 
 # TABLE OF CONTENTS
