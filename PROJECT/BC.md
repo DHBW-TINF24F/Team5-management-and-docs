@@ -9,12 +9,7 @@
 
 | Version | Date       | Author         | Comment                                      |
 |:--------:|:-----------:|:---------------:|:---------------------------------------------|
-| 1.0 | 09.10.2025 | Nils Schäffner | Initialize BC and document structure          |
-| 1.1  | 10.10.2025 | Nils Schäffner | Formulate Introduction, Scope and Benefits |
-| 1.2 | 12.10.2025 | Nils Schäffner | Initialize BC as Markdown in GitHub Docs |
-| 1.3 | 14.10.2025 | Nils Schäffner | Add Gantt diagram and risk analysis |
-| 1.4 | 15.10.2025 | Nils Schäffner | Add cost and price calculation |
-| 1.5 | 24.10.2025 | Nils Schäffner | Applied review suggestions and relocated the BC to PROJECT |
+| 1.0 | 14.11.2025 | Nils Schäffner | Release of the Business Case document|
 
 
 # TABLE OF CONTENTS
