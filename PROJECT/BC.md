@@ -2,7 +2,7 @@
 > This document is only for company use! Do not share with anybody, especially customers!
 > Only grant insight to supervisors for grading!
 
-<h1 align="center">Business Case</h1>
+<h1 align="center">Business Case for Mnestix Browser extension</h1>
 <h3 align="center"> Customer: Rentschler, Wojcik, XITASO</h3>
 <h3 align="center"> Created by Nils Schäffner</h3>
 
@@ -15,6 +15,7 @@
 | 1.3 | 14.10.2025 | Nils Schäffner | Add Gantt diagram and risk analysis |
 | 1.4 | 15.10.2025 | Nils Schäffner | Add cost and price calculation |
 | 1.5 | 24.10.2025 | Nils Schäffner | Applied review suggestions and relocated the BC to PROJECT |
+| 1.6 | 14.11.2025 | Nils Schäffner | Final changes |
 
 
 # TABLE OF CONTENTS
@@ -253,6 +254,6 @@ In addition we demand 5% of the total offer price annually to keep our service r
 | Personnel Costs       | 75,113.00      |
 | Other Costs           | 1,061.06       |
 | **Subtotal**          | —              |
-| Markup (×1.25)        | —              |
+| Profit rate (×1.25)   | —              |
 | **Total Project Cost**| **95,217.58**  |
 | In Addition (per year)| 4,760.88       |
